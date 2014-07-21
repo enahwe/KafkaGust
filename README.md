@@ -1,15 +1,13 @@
-##################
-# KafkaGust V1.0 #
-##################
+# KafkaGust
 
-## DESCRIPTION
+## Description
 KafkaGust tool has been made to produce and to consume messages based on message templates to any Kafka infrastructure.
 This tool use the native Kafka library and can be used directly from any kind of Operating System (Windows, Linux, etc.).
 KafkaGust could be useful in order to compare the performances results with another Kafka client written in any other programming language (e.g : .NET C# API, Python).
 By playing with a lot of combinations of parameters (e.g : the number of messages, the size of each message, etc.) it becomes easier and quicker
 to test directly any environment by defining for each campaign test a specific shell script (containing a combination of specific parameters).
 
-## INSTALLATION
+## Installation
 Requirements :
 Need to use a JDK V1.7 at the minimum
 The JAVA_HOME environment variable must be installed
@@ -19,13 +17,13 @@ From Linux : $ tar -xvf KafkaGust.tar.gz
 From Windows : Uncompress the 'KafkaGust-V1.x.tar.gz' (e.g : with 7zip)
 Producer execution
 
-- PRODUCER COMMAND USAGE
+## Producer command usage
 ./Producer nbrThreads campaignTitle uriList topic msgTemplate nbrMsgs msgSize batch sleep pause nbrMsgsSkipped timeout producerType producerAck preHash
 
-- PRODUCER COMMAND EXAMPLE
+## Producer command example
 ./Producer 1 TESTDEV 192.168.253.134:9092 test CDiscountPrdRef 20000 10240 0 0 0 1000 0 sync -1 0
 
-- PRODUCER COMMAND PARAMETERS
+## Producer command parameters
 [nbrThreads] : The number of threads (or producers) to execute
 [campaignTitle] : The campaign's title, only used as information. (e.g : 'TESTDEV')
 [uriList] : The URL list of brokers (e.g : '10.190.8.163:9092,10.190.8.163:90293')
@@ -46,7 +44,7 @@ This trick should increase two times better the homogeneous scattering of messag
 For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key)))
 Kafka will hash that new hexadecimal key and its routages will be more balanced.
 
-- PRODUCER MESSAGE TEMPLATES VARIABLES
+## Producer message template variables
 The sub-directory 'template' contains the two templates 'Default' and 'CDiscount'.
 It's possible to adapt the template to use by inserting the variables as described below.
 * Global variables (see the descriptions above)
