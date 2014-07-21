@@ -3,9 +3,9 @@
 ##################
 
 - DESCRIPTION
-KafkaGust tool has been made to produce and to consume messages based on message templates (ex : CDiscount, etc.) to any Kafka infrastructure.
+KafkaGust tool has been made to produce and to consume messages based on message templates to any Kafka infrastructure.
 This tool use the native Kafka library and can be used directly from any kind of Operating System (Windows, Linux, etc.).
-It can be useful to compare the performances results with another Kafka program (such as the .NET CDiscount Kafka API).
+KafkaGust could be useful in order to compare the performances results with another Kafka client written in any other programming language (e.g : .NET C# API, Python).
 By playing with a lot of combinations of parameters (e.g : the number of messages, the size of each message, etc.) it becomes easier and quicker
 to test directly any environment by defining for each campaign test a specific shell script (containing a combination of specific parameters).
 
