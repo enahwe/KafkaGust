@@ -18,7 +18,7 @@
 ## Producer command usage
 ### Pattern
 ```
-# ./Producer nbrThreads campaignTitle uriList topic msgTemplate nbrMsgs msgSize batch sleep pause nbrMsgsSkipped timeout producerType producerAck preHash
+# ./bin/Producer nbrThreads campaignTitle uriList topic msgTemplate nbrMsgs msgSize batch sleep pause nbrMsgsSkipped timeout producerType producerAck preHash
 ```
 
 ### Parameters
@@ -44,7 +44,7 @@ Kafka will hash that new hexadecimal key and its routages will be more balanced.
 
 ### Example
 ```
-# ./Producer 1 TESTDEV 192.168.253.134:9092 test CDiscountPrdRef 20000 10240 0 0 0 1000 0 sync -1 0
+# ./bin/Producer 1 TESTDEV 192.168.253.134:9092 test CDiscountPrdRef 20000 10240 0 0 0 1000 0 sync -1 0
 ```
 
 ## Producer message template variables
