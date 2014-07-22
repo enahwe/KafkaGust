@@ -7,7 +7,7 @@ KafkaGust uses the native Kafka library and can be executed directly from any ki
 
 KafkaGust is also useful for comparing the performances results with other Kafka clients implemented in any other programming language (e.g : .NET C# API, Python).
 
-Finally by defining lot of combinations of features (e.g, number of messages, template of message, size of each message, message variables, messages keys, batch mode, ...) it becomes easier and quicker to test any Kafka environment by defining for each campaign test a specific shell script.
+Finally by defining a set of features (e.g, number of messages, template of message, size of each message, message variables, messages keys, batch mode, ...) it becomes easy to test quickly any Kafka environment by creating a new shell script (copy-past and edit) for each campaign test.
 
 ## Installation
 Requirements :
