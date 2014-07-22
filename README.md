@@ -23,20 +23,20 @@
 
 ### Parameters
 * ***nbrThreads*** : The number of threads (or producers) to execute
-* **campaignTitle** : The campaign's title, only used as information. (e.g : *TESTDEV*)
-* **uriList** : The URL list of brokers (e.g : *10.190.8.163:9092,10.190.8.164:9092*)
-* **topic** : The topic's name (e.g : *test*)
-* **msgTemplate** : The message template to send (e.g : *Default*, *CDiscountPrdRef* for productRef as Kafka key, 'CDiscountPrdId' for productId as Kafka key)
-* **nbrMsgs** : The number of messages top send
-* **msgSize** : The size (in bytes) for every messsage
-* **batch** : Two values : *0* to send every message one by one, *1* to send a list of messages (list size=nbrMsgs)
-* **sleep** : The sleep time between two messages, usefull when we want to decrease the throughput (e.g : *10*)
-* **pause** : The time to wait before to send the first message, can be usefull to synchronize the launching of consumers
-* **nbrMsgsSkipped** : The number of first messages to skip (for statisitics only, the first messages will be sent anyway)
-* **timeout** : If = *0*, the application will stop after all the messages has been sent. If > *0*, the application will stop after this value (ms). If = *-1*, then the application will never stop.
-* **producerType** : Two values : *sync* means synchronous, *async* means asynchronous (see the 'producer.type' Kafka property for more information)
-* **producerAck** : Three values : *-1* for all in-sync, *0* for no ack at all, *1* for leader ack only (see the 'request.required.acks' Kafka property for more information)
-* **preHash** : Three values : *-1* for SHA pre-hash, *0* for no pre-hash, *1* for MD5 pre-hash.
+* ***campaignTitle*** : The campaign's title, only used as information. (e.g : *TESTDEV*)
+* ***uriList*** : The URL list of brokers (e.g : *10.190.8.163:9092,10.190.8.164:9092*)
+* ***topic*** : The topic's name (e.g : *test*)
+* ***msgTemplate*** : The message template to send (e.g : *Default*, *CDiscountPrdRef* for productRef as Kafka key, 'CDiscountPrdId' for productId as Kafka key)
+* ***nbrMsgs*** : The number of messages top send
+* ***msgSize*** : The size (in bytes) for every messsage
+* ***batch*** : Two values : *0* to send every message one by one, *1* to send a list of messages (list size=nbrMsgs)
+* ***sleep*** : The sleep time between two messages, usefull when we want to decrease the throughput (e.g : *10*)
+* ***pause*** : The time to wait before to send the first message, can be usefull to synchronize the launching of consumers
+* ***nbrMsgsSkipped*** : The number of first messages to skip (for statisitics only, the first messages will be sent anyway)
+* ***timeout*** : If = *0*, the application will stop after all the messages has been sent. If > *0*, the application will stop after this value (ms). If = *-1*, then the application will never stop.
+* ***producerType*** : Two values : *sync* means synchronous, *async* means asynchronous (see the 'producer.type' Kafka property for more information)
+* ***producerAck*** : Three values : *-1* for all in-sync, *0* for no ack at all, *1* for leader ack only (see the 'request.required.acks' Kafka property for more information)
+* ***preHash*** : Three values : *-1* for SHA pre-hash, *0* for no pre-hash, *1* for MD5 pre-hash.
 The pre-hash consists to pre-calculate from a Kafka key a new Kafka key formated MD5 or SHA.
 This trick should increase two times better the homogeneous scattering of messages towards the multi-partitions topic (Kafka modulo Round-Robin).
 For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key)))
@@ -52,7 +52,7 @@ The sub-directory 'template' contains the two templates 'Default' and 'CDiscount
 It's possible to adapt the template to use by inserting the variables as described below.
 
 ### Global variables (see the descriptions above)
-* ${CAMPAIGN_TITLE} : The **campaignTitle** parameter
+* ${CAMPAIGN_TITLE} : The ***campaignTitle*** parameter
 * ${URI_LIST}
 * ${TOPIC}
 * ${MSG_TEMPLATE}
