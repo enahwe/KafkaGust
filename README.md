@@ -68,7 +68,7 @@ It's possible to adapt the template to use by inserting the variables as describ
 * ${PRODUCER_ACK} : The ***producerAck*** parameter
 * ${PRE_HASH} : The ***preHash*** parameter
 
-### Instance variables (for each message)
+### Variables for each message
 * ${MESSAGE_KEY} : The message's Kafka key
 * ${MESSAGE_CREATION_TIME} : The absolute time (ms) when the message has been created
 * ${MESSAGE_CREATION_RELATIVE_TIME} : The relative time (ms) when the message has been created
