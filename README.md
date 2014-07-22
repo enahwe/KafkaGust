@@ -23,10 +23,10 @@
 
 ### Parameters
 * ***nbrThreads*** : The number of threads (or producers) to execute
-* ***campaignTitle*** : The campaign's title, only used as information. (e.g : *TESTDEV*)
+* ***campaignTitle*** : The campaign's title, only used as information. (e.g : *myTestCampaign*)
 * ***uriList*** : The URL list of brokers (e.g : *10.190.8.163:9092,10.190.8.164:9092*)
-* ***topic*** : The topic's name (e.g : *test*)
-* ***msgTemplate*** : The message template to send (e.g : *Default*, *CDiscountPrdRef* for productRef as Kafka key, 'CDiscountPrdId' for productId as Kafka key)
+* ***topic*** : The topic's name (e.g : *myTestTopic*)
+* ***msgTemplate*** : The message template to send (e.g : *Default*, *MyTemplate*, ...)
 * ***nbrMsgs*** : The number of messages top send
 * ***msgSize*** : The size (in bytes) for every messsage
 * ***batch*** : Two values : *0* to send every message one by one, *1* to send a list of messages (list size=nbrMsgs)
@@ -44,7 +44,7 @@ Kafka will hash that new hexadecimal key and its routages will be more balanced.
 
 ### Example
 ```
-# ./bin/Producer 1 TESTDEV 192.168.253.134:9092 test CDiscountPrdRef 20000 10240 0 0 0 1000 0 sync -1 0
+# ./bin/Producer 1 myTestCampaign 192.168.253.134:9092 myTestTopic Default 20000 10240 0 0 0 1000 -1 sync -1 0
 ```
 
 ## Producer messages : Template variables
