@@ -1,13 +1,13 @@
 # KafkaGust
 
 ## Description
-The KafkaGust tool has been written for producing and consuming of high volumes of messages (based on message templates) on any kind of Kafka infrastructure.
+* The KafkaGust tool has been written for producing and consuming of high volumes of messages (based on message templates) on any kind of Kafka infrastructure.
 
-KafkaGust uses the native Kafka library and can be executed directly from any kind of Operating System (e.g, Windows, Mac, Linux).
+* KafkaGust uses the native Kafka library and can be executed directly from any kind of Operating System (e.g, Windows, Mac, Linux).
 
-KafkaGust is also useful for comparing the performances results with other Kafka clients implemented in any programming language (e.g : Java, .NET C# API, Python).
+* KafkaGust is also useful for comparing the performances results with other Kafka clients implemented in any programming language (e.g : Java, .NET C# API, Python).
 
-Finally by defining a set of features (e.g, number of messages, template of message, size of each message, message variables, messages keys, batch mode, ...) it becomes easy to quickly bench any Kafka environment by creating a simple single script (copy-past and edit a shell) containing in itself a campaign of tests.
+* Finally by defining a set of features (e.g, number of messages, template of message, size of each message, message variables, messages keys, batch mode, ...) it becomes easy to quickly bench any Kafka environment by creating a simple single script (copy-past and edit a shell) containing in itself a campaign of tests.
 
 ## Requirements
 * Need to use a JDK V1.7 at the minimum
@@ -20,10 +20,10 @@ Finally by defining a set of features (e.g, number of messages, template of mess
 * From Windows : Uncompress the 'KafkaGust-V1.x.tar.gz' (e.g : with 7zip)
 
 ## Producer command usage
-* ./Producer nbrThreads campaignTitle uriList topic msgTemplate nbrMsgs msgSize batch sleep pause nbrMsgsSkipped timeout producerType producerAck preHash
+* # ./Producer nbrThreads campaignTitle uriList topic msgTemplate nbrMsgs msgSize batch sleep pause nbrMsgsSkipped timeout producerType producerAck preHash
 
 ## Producer command example
-* ./Producer 1 TESTDEV 192.168.253.134:9092 test CDiscountPrdRef 20000 10240 0 0 0 1000 0 sync -1 0
+* # ./Producer 1 TESTDEV 192.168.253.134:9092 test CDiscountPrdRef 20000 10240 0 0 0 1000 0 sync -1 0
 
 ## Producer command parameters
 * **[nbrThreads]** : The number of threads (or producers) to execute
