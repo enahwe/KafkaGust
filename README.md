@@ -27,7 +27,7 @@
 * ***uriList*** : The URL list of brokers (e.g : *10.190.8.163:9092,10.190.8.164:9092*)
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
 * ***msgTemplate*** : The message template to send (e.g : *Default*, *MyTemplate*, ...)
-* ***nbrMsgs*** : The number of messages to send in one block
+* ***nbrMsgs*** : The number of messages to send (if ***timeout=-1*** then several blocks of messages will be sent)
 * ***msgSize*** : The size (in bytes) for every messsage
 * ***batch*** : Two values : *0* to send every message one by one, *1* to send a list of messages (list size=nbrMsgs)
 * ***sleep*** : The sleep time between two messages, usefull when we want to decrease the throughput (e.g : *10*)
