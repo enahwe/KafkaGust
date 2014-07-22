@@ -5,7 +5,7 @@ The KafkaGust tool has been written for producing and consuming of high volumes 
 
 KafkaGust uses the native Kafka library and can be executed directly from any kind of Operating System (e.g, Windows, Mac, Linux).
 
-KafkaGust is also useful for comparing the performances results with other Kafka clients implemented in any other programming language (e.g : .NET C# API, Python).
+KafkaGust is also useful for comparing the performances results with other Kafka clients implemented in any programming language (e.g : Java, .NET C# API, Python).
 
 Finally by defining a set of features (e.g, number of messages, template of message, size of each message, message variables, messages keys, batch mode, ...) it becomes easy to test quickly any Kafka environment by creating a simple single script (copy-past and edit a shell) for each campaign test.
 
