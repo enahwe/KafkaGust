@@ -1,7 +1,7 @@
 # KafkaGust
 
 * **KafkaGust** has been written for producing and consuming of high volumes of messages (based on message templates) on any kind of Kafka infrastructure.
-* By defining a set of features (e.g, number of messages, template of message, size of each message, message variables, messages keys, batch mode, ...) it becomes easy and quick to bench all Kafka environments by simply creating single scripts (from a parent shell) each containing a campaign of tests.
+* By defining a set of features (e.g, number of messages, template of message, size of each message, message variables, messages keys, batch mode, ...) it becomes easy and quick to bench all Kafka environments by simply creating single scripts (from a parent shell) each containing a test campaign by sending gusts of messages.
 * KafkaGust can also be useful for comparing the performances results with other Kafka clients implemented in any programming language (e.g : Java, .NET C# API, Python).
 * KafkaGust uses the native Kafka library and can be executed directly from any kind of Operating System (e.g, Windows, Mac, Linux).
 
@@ -27,13 +27,13 @@
 * ***uriList*** : The URL list of brokers (e.g : *10.190.8.163:9092,10.190.8.164:9092*)
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
 * ***msgTemplate*** : The message template to send (e.g : *Default*, *MyTemplate*, ...)
-* ***nbrMsgs*** : The number of messages top send
+* ***nbrMsgs*** : The number of messages to send in one block
 * ***msgSize*** : The size (in bytes) for every messsage
 * ***batch*** : Two values : *0* to send every message one by one, *1* to send a list of messages (list size=nbrMsgs)
 * ***sleep*** : The sleep time between two messages, usefull when we want to decrease the throughput (e.g : *10*)
 * ***pause*** : The time to wait before to send the first message, can be usefull to synchronize the launching of consumers
 * ***nbrMsgsSkipped*** : The number of first messages to skip (for statisitics only, the first messages will be sent anyway)
-* ***timeout*** : If = *0*, the application will stop after all the messages has been sent. If > *0*, the application will stop after this value (ms). If = *-1*, then the application will never stop.
+* ***timeout*** : If = *0*, the application will stop after the block of messages has been sent. If > *0*, the application will stop after this value (ms). If = *-1*, then the application will never stop to send blocks of messages.
 * ***producerType*** : Two values : *sync* means synchronous, *async* means asynchronous (see the 'producer.type' Kafka property for more information)
 * ***producerAck*** : Three values : *-1* for all in-sync, *0* for no ack at all, *1* for leader ack only (see the 'request.required.acks' Kafka property for more information)
 * ***preHash*** : Three values : *-1* for SHA pre-hash, *0* for no pre-hash, *1* for MD5 pre-hash.
