@@ -22,7 +22,7 @@
 ```
 
 ### Parameters
-* **nbrThreads** : The number of threads (or producers) to execute
+* ***nbrThreads*** : The number of threads (or producers) to execute
 * **campaignTitle** : The campaign's title, only used as information. (e.g : *TESTDEV*)
 * **uriList** : The URL list of brokers (e.g : *10.190.8.163:9092,10.190.8.164:9092*)
 * **topic** : The topic's name (e.g : *test*)
