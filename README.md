@@ -47,7 +47,7 @@ Kafka will hash that new hexadecimal key and its routages will be more balanced.
 # ./bin/Producer 1 TESTDEV 192.168.253.134:9092 test CDiscountPrdRef 20000 10240 0 0 0 1000 0 sync -1 0
 ```
 
-## Producer template : Message variables
+## Producer message : Template variables
 The sub-directory 'template' contains the two templates 'Default' and 'CDiscount'.
 It's possible to adapt the template to use by inserting the variables as described below.
 
