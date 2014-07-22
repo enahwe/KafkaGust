@@ -20,10 +20,10 @@
 * From Windows : Uncompress the 'KafkaGust-V1.x.tar.gz' (e.g : with 7zip)
 
 ## Producer command usage
-* # ./Producer nbrThreads campaignTitle uriList topic msgTemplate nbrMsgs msgSize batch sleep pause nbrMsgsSkipped timeout producerType producerAck preHash
+* **#** ./Producer nbrThreads campaignTitle uriList topic msgTemplate nbrMsgs msgSize batch sleep pause nbrMsgsSkipped timeout producerType producerAck preHash
 
 ## Producer command example
-* # ./Producer 1 TESTDEV 192.168.253.134:9092 test CDiscountPrdRef 20000 10240 0 0 0 1000 0 sync -1 0
+* **#** ./Producer 1 TESTDEV 192.168.253.134:9092 test CDiscountPrdRef 20000 10240 0 0 0 1000 0 sync -1 0
 
 ## Producer command parameters
 * **[nbrThreads]** : The number of threads (or producers) to execute
