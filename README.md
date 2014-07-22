@@ -53,18 +53,19 @@ It's possible to adapt the template to use by inserting the variables as describ
 
 ### Common variables (for all messages)
 * ${CAMPAIGN_TITLE} : The ***campaignTitle*** parameter
-* ${URI_LIST}
-* ${TOPIC}
-* ${MSG_TEMPLATE}
-* ${NUMBER_MESSAGES}
-* ${MESSAGE_SIZE}
-* ${SLEEP}
-* ${PAUSE}
-* ${NUMBER_MESSAGES_SKIPPED}
-* ${TIMEOUT}
-* ${PRODUCER_TYPE}
-* ${PRODUCER_ACK}
-* ${PRE_HASH}
+* ${URI_LIST} : ***uriList*** parameter
+* ${TOPIC} : ***topic*** parameter
+* ${MSG_TEMPLATE} : ***msgTemplate*** parameter
+* ${NUMBER_MESSAGES} : ***nbrMsgs*** parameter
+* ${MESSAGE_SIZE} : ***msgSize*** parameter
+* ${BATCH} : ***batch*** parameter
+* ${SLEEP} : ***sleep*** parameter
+* ${PAUSE} : ***pause*** parameter
+* ${NUMBER_MESSAGES_SKIPPED} : ***XXXX*** parameter
+* ${TIMEOUT} : ***XXXX*** parameter
+* ${PRODUCER_TYPE} : ***XXXX*** parameter
+* ${PRODUCER_ACK} : ***XXXX*** parameter
+* ${PRE_HASH} : ***XXXX*** parameter
 
 ### Instance variables (for each message)
 * ${MESSAGE_KEY} : The message's Kafka key
