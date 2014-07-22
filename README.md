@@ -7,7 +7,7 @@
 
 * KafkaGust is also useful for comparing the performances results with other Kafka clients implemented in any programming language (e.g : Java, .NET C# API, Python).
 
-* Finally by defining a set of features (e.g, number of messages, template of message, size of each message, message variables, messages keys, batch mode, ...) it becomes easy and quick to test any Kafka environments by creating single scripts (from a parent shell) each containing a campaign of tests.
+* Finally by defining a set of features (e.g, number of messages, template of message, size of each message, message variables, messages keys, batch mode, ...) it becomes easy and quick to bench any Kafka environments by creating single scripts (from a parent shell) each containing a campaign of tests.
 
 ## Requirements
 * Need to use a JDK V1.7 at the minimum
