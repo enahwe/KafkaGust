@@ -17,13 +17,12 @@
 * From Windows : Uncompress the 'KafkaGust-V1.x.tar.gz' (e.g : with 7zip)
 
 ## Producer command usage
-### toto
-**Pattern :**
+### Pattern
 ```
 # ./Producer nbrThreads campaignTitle uriList topic msgTemplate nbrMsgs msgSize batch sleep pause nbrMsgsSkipped timeout producerType producerAck preHash
 ```
 
-**Parameters :**
+### Parameters
 * **[nbrThreads]** : The number of threads (or producers) to execute
 * **[campaignTitle]** : The campaign's title, only used as information. (e.g : 'TESTDEV')
 * **[uriList]** : The URL list of brokers (e.g : '10.190.8.163:9092,10.190.8.163:90293')
@@ -44,7 +43,7 @@ This trick should increase two times better the homogeneous scattering of messag
 For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key)))
 Kafka will hash that new hexadecimal key and its routages will be more balanced.
 
-**Example :**
+### Example
 ```
 # ./Producer 1 TESTDEV 192.168.253.134:9092 test CDiscountPrdRef 20000 10240 0 0 0 1000 0 sync -1 0
 ```
