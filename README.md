@@ -14,16 +14,16 @@ Finally by defining a set of features (e.g, number of messages, template of mess
 * The JAVA_HOME environment variable must be installed
 
 ## Installation
-# Download the KafkaGust file 'KafkaGust-V1.x.tar.gz'
-# Uncompress the file to your prefered folder (by default a sub-directory 'KafkaGust' containing all the files will be created)
-# From Linux : $ tar -xvf KafkaGust.tar.gz
-# From Windows : Uncompress the 'KafkaGust-V1.x.tar.gz' (e.g : with 7zip)
+* Download the KafkaGust file 'KafkaGust-V1.x.tar.gz'
+* Uncompress the file to your prefered folder (by default a sub-directory 'KafkaGust' containing all the files will be created)
+* From Linux : $ tar -xvf KafkaGust.tar.gz
+* From Windows : Uncompress the 'KafkaGust-V1.x.tar.gz' (e.g : with 7zip)
 
 ## Producer command usage
-./Producer nbrThreads campaignTitle uriList topic msgTemplate nbrMsgs msgSize batch sleep pause nbrMsgsSkipped timeout producerType producerAck preHash
+* ./Producer nbrThreads campaignTitle uriList topic msgTemplate nbrMsgs msgSize batch sleep pause nbrMsgsSkipped timeout producerType producerAck preHash
 
 ## Producer command example
-./Producer 1 TESTDEV 192.168.253.134:9092 test CDiscountPrdRef 20000 10240 0 0 0 1000 0 sync -1 0
+* ./Producer 1 TESTDEV 192.168.253.134:9092 test CDiscountPrdRef 20000 10240 0 0 0 1000 0 sync -1 0
 
 ## Producer command parameters
 * **[nbrThreads]** : The number of threads (or producers) to execute
