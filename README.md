@@ -51,7 +51,7 @@ Kafka will hash that new hexadecimal key and its routages will be more balanced.
 The sub-directory 'template' contains the two templates 'Default' and 'CDiscount'.
 It's possible to adapt the template to use by inserting the variables as described below.
 
-### Global variables (see the descriptions above)
+### Common variables (for all messages)
 * ${CAMPAIGN_TITLE} : The ***campaignTitle*** parameter
 * ${URI_LIST}
 * ${TOPIC}
@@ -66,7 +66,7 @@ It's possible to adapt the template to use by inserting the variables as describ
 * ${PRODUCER_ACK}
 * ${PRE_HASH}
 
-### Message variables
+### Instance variables (for each message)
 * ${MESSAGE_KEY} : The message's Kafka key
 * ${MESSAGE_CREATION_TIME} : The absolute time (ms) when the message has been created
 * ${MESSAGE_CREATION_RELATIVE_TIME} : The relative time (ms) when the message has been created
@@ -74,6 +74,6 @@ It's possible to adapt the template to use by inserting the variables as describ
 * ${BLOCK_CREATION_TIME} : The absolute time (ms) when the block of messages has been created
 * ${MESSAGE_CONTENT} : The message's content (e.g : n times the letter 'D' according the size of the message we want)
 
-### Extended variables 
+### Extended variables (for each message)
 * ${REFERENCE_ID} : The "reference_id" field from a Product
 * ${PRODUCT_ID} : The "product_id" field from a Product
