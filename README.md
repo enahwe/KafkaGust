@@ -51,7 +51,7 @@ Kafka will hash that new hexadecimal key and its routages will be more balanced.
 The sub-directory 'template' contains the two templates 'Default' and 'CDiscount'.
 It's possible to adapt the template to use by inserting the variables as described below.
 * Global variables (see the descriptions above)
-${CAMPAIGN_TITLE}
+** ${CAMPAIGN_TITLE}
 ${URI_LIST}
 ${TOPIC}
 ${MSG_TEMPLATE}
