@@ -27,13 +27,13 @@
 * ***uriList*** : The URL list of brokers (e.g : *10.190.8.163:9092,10.190.8.164:9092*)
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
 * ***msgTemplate*** : The message template to send (e.g : *Default*, *MyTemplate*, ...)
-* ***nbrMsgs*** : The number of messages to send (if ***timeout=-1*** then several blocks of messages will be sent)
+* ***nbrMsgs*** : The number of messages to send (if ***timeout=-1*** then several gusts of messages will be sent)
 * ***msgSize*** : The size (in bytes) for every messsage
 * ***batch*** : Two values : *0* to send every message one by one, *1* to send a list of messages (list size=nbrMsgs)
 * ***sleep*** : The sleep time between two messages, usefull when we want to decrease the throughput (e.g : *10*)
 * ***pause*** : The time to wait before to send the first message, can be usefull to synchronize the launching of consumers
 * ***nbrMsgsSkipped*** : The number of first messages to skip (for statisitics only, the first messages will be sent anyway)
-* ***timeout*** : If = *0*, the application will stop after the block of messages has been sent. If > *0*, the application will stop after this value (ms). If = *-1*, then the application will never stop to send blocks of messages.
+* ***timeout*** : If = *0*, the application will stop after the gust of messages has been sent. If > *0*, the application will stop after this value (ms). If = *-1*, then the application will never stop to send gusts of messages.
 * ***producerType*** : Two values : *sync* means synchronous, *async* means asynchronous (see the 'producer.type' Kafka property for more information)
 * ***producerAck*** : Three values : *-1* for all in-sync, *0* for no ack at all, *1* for leader ack only (see the 'request.required.acks' Kafka property for more information)
 * ***preHash*** : Three values : *-1* for SHA pre-hash, *0* for no pre-hash, *1* for MD5 pre-hash.
@@ -72,8 +72,8 @@ It's possible to adapt the template to use by inserting the variables as describ
 * ${MESSAGE_KEY} : The message's Kafka key
 * ${MESSAGE_CREATION_TIME} : The absolute time (ms) when the message has been created
 * ${MESSAGE_CREATION_RELATIVE_TIME} : The relative time (ms) when the message has been created
-* ${BLOCK_COUNTER} : The block's counter
-* ${BLOCK_CREATION_TIME} : The absolute time (ms) when the block of messages has been created
+* ${GUST_COUNTER} : The gust's counter
+* ${GUST_CREATION_TIME} : The absolute time (ms) when the gust of messages has been created
 * ${MESSAGE_CONTENT} : The message's content (e.g : n times the letter 'D' according the size of the message we want)
 
 ### Extended variables (for each message)
