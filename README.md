@@ -9,15 +9,15 @@ KafkaGust is also useful for comparing the performances results with other Kafka
 
 Finally by defining a set of features (e.g, number of messages, template of message, size of each message, message variables, messages keys, batch mode, ...) it becomes easy to quickly bench any Kafka environment by creating a simple single script (copy-past and edit a shell) containing in itself a campaign of tests.
 
+## Requirements
+# Need to use a JDK V1.7 at the minimum
+# The JAVA_HOME environment variable must be installed
+
 ## Installation
-Requirements :
-Need to use a JDK V1.7 at the minimum
-The JAVA_HOME environment variable must be installed
-Download the KafkaGust file 'KafkaGust-V1.x.tar.gz'
-Uncompress the file to your prefered folder (by default a sub-directory 'KafkaGust' containing all the files will be created)
-From Linux : $ tar -xvf KafkaGust.tar.gz
-From Windows : Uncompress the 'KafkaGust-V1.x.tar.gz' (e.g : with 7zip)
-Producer execution
+# Download the KafkaGust file 'KafkaGust-V1.x.tar.gz'
+# Uncompress the file to your prefered folder (by default a sub-directory 'KafkaGust' containing all the files will be created)
+# From Linux : $ tar -xvf KafkaGust.tar.gz
+# From Windows : Uncompress the 'KafkaGust-V1.x.tar.gz' (e.g : with 7zip)
 
 ## Producer command usage
 ./Producer nbrThreads campaignTitle uriList topic msgTemplate nbrMsgs msgSize batch sleep pause nbrMsgsSkipped timeout producerType producerAck preHash
