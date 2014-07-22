@@ -52,20 +52,21 @@ The sub-directory 'template' contains the two templates 'Default' and 'CDiscount
 It's possible to adapt the template to use by inserting the variables as described below.
 
 ### Common variables (for all messages)
+* ${NUMBER_THREADS} : The ***nbrThreads*** parameter
 * ${CAMPAIGN_TITLE} : The ***campaignTitle*** parameter
-* ${URI_LIST} : ***uriList*** parameter
-* ${TOPIC} : ***topic*** parameter
-* ${MSG_TEMPLATE} : ***msgTemplate*** parameter
-* ${NUMBER_MESSAGES} : ***nbrMsgs*** parameter
-* ${MESSAGE_SIZE} : ***msgSize*** parameter
-* ${BATCH} : ***batch*** parameter
-* ${SLEEP} : ***sleep*** parameter
-* ${PAUSE} : ***pause*** parameter
-* ${NUMBER_MESSAGES_SKIPPED} : ***XXXX*** parameter
-* ${TIMEOUT} : ***XXXX*** parameter
-* ${PRODUCER_TYPE} : ***XXXX*** parameter
-* ${PRODUCER_ACK} : ***XXXX*** parameter
-* ${PRE_HASH} : ***XXXX*** parameter
+* ${URI_LIST} : The ***uriList*** parameter
+* ${TOPIC} : The ***topic*** parameter
+* ${MSG_TEMPLATE} : The ***msgTemplate*** parameter
+* ${NUMBER_MESSAGES} : The ***nbrMsgs*** parameter
+* ${MESSAGE_SIZE} : The ***msgSize*** parameter
+* ${BATCH} : The ***batch*** parameter
+* ${SLEEP} : The ***sleep*** parameter
+* ${PAUSE} : The ***pause*** parameter
+* ${NUMBER_MESSAGES_SKIPPED} : The ***nbrMsgsSkipped*** parameter
+* ${TIMEOUT} : The ***timeout*** parameter
+* ${PRODUCER_TYPE} : The ***producerType*** parameter
+* ${PRODUCER_ACK} : The ***producerAck*** parameter
+* ${PRE_HASH} : The ***preHash*** parameter
 
 ### Instance variables (for each message)
 * ${MESSAGE_KEY} : The message's Kafka key
