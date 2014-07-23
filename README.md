@@ -69,7 +69,7 @@ It's possible to adapt the template to use by inserting the variables as describ
 * ${PRE_HASH} : The ***preHash*** parameter
 
 ### Variables for each message
-Standard
+Standard variables
 * ${MESSAGE_KEY} : The message's Kafka key
 * ${MESSAGE_CREATION_TIME} : The absolute time (ms) when the message has been created
 * ${MESSAGE_CREATION_RELATIVE_TIME} : The relative time (ms) when the message has been created
@@ -77,6 +77,6 @@ Standard
 * ${GUST_CREATION_TIME} : The absolute time (ms) when the gust of messages has been created
 * ${MESSAGE_CONTENT} : The message's content (e.g : n times the letter 'D' according the size of the message we want)
 
-Extended
+Extended variables
 * ${REFERENCE_ID} : The "reference_id" field from a Product
 * ${PRODUCT_ID} : The "product_id" field from a Product
