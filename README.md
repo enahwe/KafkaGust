@@ -21,7 +21,7 @@
 ## KafkaGust Producer command
 ### Command's pattern
 ```
-# ./bin/Producer nbrThreads campaignName brokerUris topic msgTemplate nbrMsgs msgSize compression listSize sleep pause nbrMsgsSkipped timeout asyncMode ackLevel preHash
+# ./bin/Producer nbrThreads campaignName brokerUris topic msgTemplate nbrMsgs msgSize compression listSize sleep pause nbrMsgsSkipped maxTime asyncMode ackLevel preHash
 ```
 ### Command example
 ```
