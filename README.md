@@ -40,9 +40,9 @@
  * If ***timeout=-1*** then several gusts of messages will be sent
 * ***msgSize*** : The size (in bytes) for every messsage
 * ***compression*** : The compression codec to compress the messages. Three values :
- * *none* or *0*: No compression
- * *gzip* or *1* : Gzip codec
- * *snappy* or *2* : Snappy codec
+ * `none` or `0`: No compression
+ * `gzip` or `1` : Gzip codec
+ * `snappy` or `2` : Snappy codec
  * Info : Overloads the two properties "*compression.codec*" and "*compressed.topics*" from the Kafka producer's native configuration
 * ***listSize*** : Two values :
  * *0* to send every message one by one,
