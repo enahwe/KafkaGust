@@ -55,9 +55,10 @@
  * If = *0*, the application will stop after the gust of messages has been sent.
  * If > *0*, the application will stop after this value (ms).
  * If = *-1*, then the application will never stop to send gusts of messages.
-* ***producerType*** : Two values :
- * *sync* means synchronous,
- * *async* means asynchronous (see the 'producer.type' Kafka property for more information)
+* ***asyncMode*** : Two values :
+ * `sync` or `0` : Synchronous send
+ * `async` or `1` : Asynchronous send
+ * Info : Overloads the two property "*producer.type*" from the Kafka producer's native configuration
 * ***producerAck*** : Three values :
  * `-1` : All in-sync
  * `0` : No ack at all
@@ -65,7 +66,7 @@
  * Info : Overloads the property "*request.required.acks*" from the Kafka producer's native configuration
 * ***preHash*** : Three values :
  * `-1` : SHA pre-hash
- * `0` : No pre-hash at all (the key is submitted to Kafka as is)
+ * `0` : No pre-hash at all (the message key is submitted to Kafka as is)
  * `1` : MD5 pre-hash
  * The pre-hash consists to pre-calculate from a Kafka key a new Kafka key formated MD5 or SHA. This trick should increase two times better the homogeneous scattering of messages towards the multi-partitions topic (Kafka modulo Round-Robin). For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key))) Kafka will hash that new hexadecimal key and its routages will be more balanced.
 
