@@ -31,9 +31,9 @@
 ### Parameters
 * ***nbrThreads*** : The number of producers (or threads) to execute
 * ***campaignName*** : The campaign's name (e.g : *MyCampaign*)
- * Overloads the property "client.id" from the Kafka producer's native configuration
+ * Info : Overloads the property "*client.id*" from the Kafka producer's native configuration
 * ***uriList*** : The URL list of brokers (e.g : *192.168.1.1:9092,192.168.1.2:9092*)
- * Overloads the property "metadata.broker.list" from the Kafka producer's native configuration
+ * Info : Overloads the property "*metadata.broker.list*" from the Kafka producer's native configuration
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
 * ***msgTemplate*** : The message template to send (e.g : *Default*, *MyTemplate*, ...)
 * ***nbrMsgs*** : The number of messages to send (if ***timeout=-1*** then several gusts of messages will be sent)
@@ -55,7 +55,7 @@
  * *-1* for all in-sync,
  * *0* for no ack at all,
  * *1* for leader ack only
- * Overloads the property "request.required.acks" from the Kafka producer's native configuration
+ * Info : Overloads the property "*request.required.acks*" from the Kafka producer's native configuration
 * ***preHash*** : Three values :
  * *-1* for SHA pre-hash,
  * *0* for no pre-hash,
