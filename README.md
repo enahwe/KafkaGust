@@ -48,7 +48,7 @@
  * `0` : Send every message, one by one
  * `1` : Send the list of messages
 * ***sleep*** : The time sleep (in ms) between every message, useful to decrease the throughput
- * Note : A time sleep of zero will disable this feature
+ * Note : A time sleep of zero won't cause any slowdown
 * ***pause*** : The time to wait before to send the first message, can be usefull to synchronize the launching of consumers
 * ***nbrMsgsSkipped*** : The number of first messages to skip (for statisitics only, the first messages will be sent anyway)
 * ***timeout*** :
@@ -59,14 +59,14 @@
  * *sync* means synchronous,
  * *async* means asynchronous (see the 'producer.type' Kafka property for more information)
 * ***producerAck*** : Three values :
- * `-1` for all in-sync,
- * `0` for no ack at all,
- * `1` for leader ack only
+ * `-1` : All in-sync
+ * `0` : No ack at all
+ * `1` : Leader ack only
  * Info : Overloads the property "*request.required.acks*" from the Kafka producer's native configuration
 * ***preHash*** : Three values :
- * `-1` for SHA pre-hash,
- * `0` for no pre-hash,
- * `1` for MD5 pre-hash.
+ * `-1` : SHA pre-hash
+ * `0` : No pre-hash at all (the key is submitted to Kafka as is)
+ * `1` : MD5 pre-hash
  * The pre-hash consists to pre-calculate from a Kafka key a new Kafka key formated MD5 or SHA. This trick should increase two times better the homogeneous scattering of messages towards the multi-partitions topic (Kafka modulo Round-Robin). For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key))) Kafka will hash that new hexadecimal key and its routages will be more balanced.
 
 ## KafkaGust Producer messages
