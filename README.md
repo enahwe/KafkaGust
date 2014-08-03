@@ -10,10 +10,11 @@
 * The JAVA_HOME environment variable must be set
 
 ## Installation
-* Download the KafkaGust file 'KafkaGust-V1.x.tar.gz'
+* Download the last KafkaGust install 'KafkaGust-Vx.y.tar.gz'
 * Uncompress the file to your prefered folder
- * by default a sub-directory 'KafkaGust' containing all the files will be created
-* From Linux : $ tar -xvf KafkaGust.tar.gz
+ * (by default a sub-directory 'KafkaGust' containing all the files will be created)
+  * From Linux :
+    * $ tar -xvf KafkaGust.tar.gz
 * From Windows : Uncompress the 'KafkaGust-V1.x.tar.gz' (e.g : with 7zip)
 
 ## Producer command : Usage
