@@ -18,7 +18,7 @@
   * From Windows :
     * Uncompress 'KafkaGust-Vx.y.tar.gz' twice (e.g : with 7zip)
 
-## Producer command : Usage
+## Producer command
 ### Command's pattern
 ```
 # ./bin/Producer nbrThreads campaignName brokerUris topic msgTemplate nbrMsgs msgSize compression listSize sleep pause nbrMsgsSkipped timeout asyncMode ackLevel preHash
@@ -60,9 +60,9 @@
  * *1* for MD5 pre-hash.
  * The pre-hash consists to pre-calculate from a Kafka key a new Kafka key formated MD5 or SHA. This trick should increase two times better the homogeneous scattering of messages towards the multi-partitions topic (Kafka modulo Round-Robin). For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key))) Kafka will hash that new hexadecimal key and its routages will be more balanced.
 
-## Producer messages : Template variables
-The sub-directory 'template' contains the two templates 'Default' and 'CDiscount'.
-It's possible to adapt the template to use by inserting the variables as described below.
+## Producer messages
+The sub-directory 'template' contains the two example templates "DefaultMsg" and "JsonMsg.
+You can create your own format templates by inserting in it the following variables :
 
 ### Variables commons to all messages
 * ${NUMBER_THREADS} : The ***nbrThreads*** parameter
