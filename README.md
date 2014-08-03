@@ -58,14 +58,14 @@
  * *sync* means synchronous,
  * *async* means asynchronous (see the 'producer.type' Kafka property for more information)
 * ***producerAck*** : Three values :
- * *-1* for all in-sync,
- * *0* for no ack at all,
- * *1* for leader ack only
+ * `-1` for all in-sync,
+ * `0` for no ack at all,
+ * `1` for leader ack only
  * Info : Overloads the property "*request.required.acks*" from the Kafka producer's native configuration
 * ***preHash*** : Three values :
- * *-1* for SHA pre-hash,
- * *0* for no pre-hash,
- * *1* for MD5 pre-hash.
+ * `-1` for SHA pre-hash,
+ * `0` for no pre-hash,
+ * `1` for MD5 pre-hash.
  * The pre-hash consists to pre-calculate from a Kafka key a new Kafka key formated MD5 or SHA. This trick should increase two times better the homogeneous scattering of messages towards the multi-partitions topic (Kafka modulo Round-Robin). For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key))) Kafka will hash that new hexadecimal key and its routages will be more balanced.
 
 ## KafkaGust Producer messages
