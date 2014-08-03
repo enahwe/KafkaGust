@@ -45,9 +45,10 @@
  * `snappy` or `2` : Snappy codec
  * Info : Overloads the two properties "*compression.codec*" and "*compressed.topics*" from the Kafka producer's native configuration
 * ***listSize*** : Two values :
- * *0* to send every message one by one,
- * *1* to send a list of messages (list size=nbrMsgs)
-* ***sleep*** : The sleep time between two messages, usefull when we want to decrease the throughput (e.g : *10*)
+ * `0` : Send every message, one by one
+ * `1` : Send the list of messages
+* ***sleep*** : The time sleep (in ms) between every message, useful to decrease the throughput
+ * Note : A time sleep of zero will disable this feature
 * ***pause*** : The time to wait before to send the first message, can be usefull to synchronize the launching of consumers
 * ***nbrMsgsSkipped*** : The number of first messages to skip (for statisitics only, the first messages will be sent anyway)
 * ***timeout*** :
