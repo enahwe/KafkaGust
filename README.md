@@ -35,8 +35,9 @@
 * ***uriList*** : The URL list of brokers (e.g : *192.168.1.1:9092,192.168.1.2:9092*)
  * Info : Overloads the property "*metadata.broker.list*" from the Kafka producer's native configuration
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
-* ***msgTemplate*** : The message template to send (e.g : *Default*, *MyTemplate*, ...)
-* ***nbrMsgs*** : The number of messages to send (if ***timeout=-1*** then several gusts of messages will be sent)
+* ***msgTemplate*** : The template used to send the messages (e.g : *DefaultMsg*, *JsonMsg*, ...)
+* ***nbrMsgs*** : The number of messages to send in every gust (block of messages)
+ * If ***timeout=-1*** then several gusts of messages will be sent
 * ***msgSize*** : The size (in bytes) for every messsage
 * ***batch*** : Two values :
  * *0* to send every message one by one,
