@@ -13,7 +13,7 @@
 * Download the last KafkaGust install 'KafkaGust-Vx.y.tar.gz'
 * Uncompress the file to your prefered folder :
  * (by default a sub-directory 'KafkaGust' containing all the files will be created)
-  * From Linux :
+  * From Linux, Mac, Unix :
     * $ tar -xvf KafkaGust-Vx.y.tar.gz
   * From Windows :
     * Uncompress 'KafkaGust-Vx.y.tar.gz' twice (e.g : with 7zip)
