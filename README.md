@@ -25,7 +25,7 @@
 ```
 ### Command example
 ```
-# ./bin/Producer 1 myTestCampaign 192.168.253.134:9092 myTestTopic Default 1000 10240 0 0 0 1000 -1 sync -1 0
+# ./bin/Producer 1 MyCampaign 192.168.253.130:9092 myTopic DefaultMsg 1000 10240 0 1 0 0 0 -1 sync -1 0
 ```
 
 ### Parameters
