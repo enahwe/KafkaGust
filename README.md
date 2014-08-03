@@ -21,12 +21,12 @@
 ## Producer command : Usage
 ### Pattern
 ```
-# ./bin/Producer nbrThreads campaignTitle uriList topic msgTemplate nbrMsgs msgSize batch sleep pause nbrMsgsSkipped timeout producerType producerAck preHash
+# ./bin/Producer nbrThreads campaignName brokerUris topic msgTemplate nbrMsgs msgSize compression listSize sleep pause nbrMsgsSkipped timeout asyncMode ackLevel preHash
 ```
 
 ### Parameters
 * ***nbrThreads*** : The number of threads (or producers) to execute
-* ***campaignTitle*** : The campaign's title, only used as information. (e.g : *myTestCampaign*)
+* ***campaignName*** : The campaign's name (e.g : *MyCampaign*), overloads the parameter "client.id" for the Kafka producer
 * ***uriList*** : The URL list of brokers (e.g : *10.190.8.163:9092,10.190.8.164:9092*)
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
 * ***msgTemplate*** : The message template to send (e.g : *Default*, *MyTemplate*, ...)
