@@ -1,13 +1,13 @@
 # KafkaGust
 
-* **KafkaGust** has been written for producing and consuming high volumes of messages (based on message templates) on any kind of Kafka infrastructure.
+* **KafkaGust** has been written for producing high volumes of messages (based on message templates) with statistics on any kind of Kafka infrastructure.
 * By defining a set of features (e.g, number of messages, template of message, size of each message, message variables, message key, compression, batch mode, ...) it becomes easy and quick to bench all Kafka environments by simply creating single scripts (from a parent shell) each containing a test campaign for sending gusts (or blocks) of messages.
 * KafkaGust can also be useful for comparing the performances results with other Kafka clients implemented in any programming language (e.g : Java, .NET C# API, Python).
 * KafkaGust uses the native Kafka library and can be executed directly from any kind of Operating System (e.g, Windows, Mac, Linux).
 
 ## Requirements
-* Need to use a JDK V1.7 at the minimum
-* The JAVA_HOME environment variable must be installed
+* A JDK version 1.7 minimum must be installed
+* The JAVA_HOME environment variable must be set
 
 ## Installation
 * Download the KafkaGust file 'KafkaGust-V1.x.tar.gz'
