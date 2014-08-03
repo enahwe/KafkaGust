@@ -63,7 +63,7 @@
 ## Producer messages
 The sub-directory 'template' contains the two example templates "*DefaultMsg*" and "*JsonMsg*".
 
-You can create your own format templates by inserting in it the following variables :
+Also, you can create your own format templates by inserting inside it the following variables :
 
 ### Variables commons to all messages
 * ${NUMBER_THREADS} : The ***nbrThreads*** parameter
