@@ -32,14 +32,18 @@
 * ***nbrThreads*** : The number of producers (or threads) to execute
 * ***campaignName*** : The campaign's name (e.g : *MyCampaign*)
  * Info : Overloads the property "*client.id*" from the Kafka producer's native configuration
-* ***uriList*** : The URL list of brokers (e.g : *192.168.1.1:9092,192.168.1.2:9092*)
+* ***brokerUris*** : The URI list of brokers (e.g : *192.168.1.1:9092,192.168.1.2:9092*)
  * Info : Overloads the property "*metadata.broker.list*" from the Kafka producer's native configuration
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
 * ***msgTemplate*** : The template used to send the messages (e.g : *DefaultMsg*, *JsonMsg*, ...)
 * ***nbrMsgs*** : The number of messages to send in every gust (block of messages)
  * If ***timeout=-1*** then several gusts of messages will be sent
 * ***msgSize*** : The size (in bytes) for every messsage
-* ***batch*** : Two values :
+* ***compression*** : The compression codec. Three values :
+ * none :
+ * gzip :
+ * snappy :
+* ***listSize*** : Two values :
  * *0* to send every message one by one,
  * *1* to send a list of messages (list size=nbrMsgs)
 * ***sleep*** : The sleep time between two messages, usefull when we want to decrease the throughput (e.g : *10*)
