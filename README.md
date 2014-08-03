@@ -16,7 +16,7 @@
   * From Linux :
     * $ tar -xvf KafkaGust-Vx.y.tar.gz
   * From Windows :
-   *  Uncompress 'KafkaGust-Vx.y.tar.gz' twice (e.g : with 7zip)
+    * Uncompress 'KafkaGust-Vx.y.tar.gz' twice (e.g : with 7zip)
 
 ## Producer command : Usage
 ### Pattern
