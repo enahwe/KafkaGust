@@ -51,14 +51,13 @@
  * Note : A time sleep of zero won't cause any slowdown
 * ***pause*** : The time to wait before to send the first message, can be usefull to synchronize the launching of consumers
 * ***nbrMsgsSkipped*** : The number of first messages to skip (for statisitics only, the first messages will be sent anyway)
-* ***timeout*** :
- * If = *0*, the application will stop after the gust of messages has been sent.
- * If > *0*, the application will stop after this value (ms).
- * If = *-1*, then the application will never stop to send gusts of messages.
+* ***maxTime*** :
+ * `0` : No effect
+ * If `>0` : The application will stop after this value (in ms)
 * ***asyncMode*** : Two values :
  * `sync` or `0` : Synchronous send
  * `async` or `1` : Asynchronous send
- * Info : Overloads the two property "*producer.type*" from the Kafka producer's native configuration
+ * Info : Overloads the property "*producer.type*" from the Kafka producer's native configuration
 * ***producerAck*** : Three values :
  * `-1` : All in-sync
  * `0` : No ack at all
