@@ -61,7 +61,7 @@
  * The pre-hash consists to pre-calculate from a Kafka key a new Kafka key formated MD5 or SHA. This trick should increase two times better the homogeneous scattering of messages towards the multi-partitions topic (Kafka modulo Round-Robin). For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key))) Kafka will hash that new hexadecimal key and its routages will be more balanced.
 
 ## Producer messages
-The sub-directory 'template' contains the two example templates "DefaultMsg" and "JsonMsg.
+The sub-directory 'template' contains the two example templates "*DefaultMsg*" and "*JsonMsg*".
 You can create your own format templates by inserting in it the following variables :
 
 ### Variables commons to all messages
