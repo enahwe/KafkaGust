@@ -25,19 +25,21 @@
 ```
 ### Command example
 ```
-# ./bin/Producer 1 MyCampaign 192.168.253.130:9092 myTopic DefaultMsg 1000 10240 0 1 0 0 0 -1 sync -1 0
+# ./bin/Producer 1 MyCampaign 127.0.0.1:9092 myTopic DefaultMsg 1000 10240 0 1 0 0 0 -1 sync -1 0
 ```
 
 ### Parameters
 * ***nbrThreads*** : The number of producers (or threads) to execute
 * ***campaignName*** : The campaign's name (e.g : *MyCampaign*)
  * Overloads the property "client.id" into the Kafka producer's native configuration
-* ***uriList*** : The URL list of brokers (e.g : *10.190.8.163:9092,10.190.8.164:9092*)
+* ***uriList*** : The URL list of brokers (e.g : *192.168.1.1:9092,192.168.1.2:9092*)
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
 * ***msgTemplate*** : The message template to send (e.g : *Default*, *MyTemplate*, ...)
 * ***nbrMsgs*** : The number of messages to send (if ***timeout=-1*** then several gusts of messages will be sent)
 * ***msgSize*** : The size (in bytes) for every messsage
-* ***batch*** : Two values : *0* to send every message one by one, *1* to send a list of messages (list size=nbrMsgs)
+* ***batch*** : Two values :
+ * *0* to send every message one by one,
+ * *1* to send a list of messages (list size=nbrMsgs)
 * ***sleep*** : The sleep time between two messages, usefull when we want to decrease the throughput (e.g : *10*)
 * ***pause*** : The time to wait before to send the first message, can be usefull to synchronize the launching of consumers
 * ***nbrMsgsSkipped*** : The number of first messages to skip (for statisitics only, the first messages will be sent anyway)
