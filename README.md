@@ -21,7 +21,7 @@
 ## KafkaGust Producer command
 ### Command's pattern
 ```
-# ./bin/Producer nbrThreads campaignName brokerUris topic msgTemplate nbrMsgs msgSize compression listSize sleep pause nbrMsgsSkipped maxTime asyncMode ackLevel preHash
+# ./bin/Producer nbrThreads campaignName brokerUris topic msgTemplate nbrMsgs msgSize compression listSize sleep pause nbrMsgsSkipped maxTime syncAsync ackLevel preHash
 ```
 ### Command example
 ```
@@ -54,11 +54,11 @@
 * ***maxTime*** :
  * `0` : No effect
  * If `>0` : The application will stop after this value (in ms)
-* ***asyncMode*** : Two values :
+* ***syncAsync*** : Two values :
  * `sync` or `0` : Synchronous send
  * `async` or `1` : Asynchronous send
  * Info : Overloads the property "*producer.type*" from the Kafka producer's native configuration
-* ***producerAck*** : Three values :
+* ***ackLevel*** : Three values :
  * `-1` : All in-sync
  * `0` : No ack at all
  * `1` : Leader ack only
