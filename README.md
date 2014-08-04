@@ -45,14 +45,14 @@
  * `gzip` or `1` : Gzip codec
  * `snappy` or `2` : Snappy codec
  * [Note] : This parameter overloads the two properties `"compression.codec"` and `"compressed.topics"` from the Kafka producer's native configuration
-* ***listSize*** : Allows to send lists of messages in once (rather to send messages one by one)
+* ***listSize*** : Allows to send lists of messages in once, rather to send messages one by one (can help to improve the throughput)
  * `<=1` : No effect, all the messages will be sent one by one to Kafka
  * `n>1` : The messages will be sent by list of 'n' messages to Kafka
  * [Note] : This feature use the 'send()' native method for sending a list of 'KeyedMessage'
 * ***sleep*** : The time sleep (in ms) between every message (can be useful to slow down the throughput)
  * `0` : No slowdown
  * `t>0` : The producer will wait for 't' ms between every send
-* ***pause*** : The time to wait before to send the first message, can be usefull to synchronize the launching of consumers
+* ***pause*** : The time to wait before to send the first message (can be usefull to synchronize the launching of consumers)
 * ***nbrMsgsSkipped*** : The number of first messages to skip (for statisitics only, the first messages will be sent anyway)
 * ***maxTime*** : The time (in ms) after which the producer will automatically stop
  * `-1` : No effect, the producer will never stop
