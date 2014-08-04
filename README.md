@@ -12,11 +12,11 @@
 ## Installation
 * Download the last KafkaGust install 'KafkaGust-Vx.y.tar.gz'
 * Uncompress the file to your prefered folder :
- * (by default a sub-directory 'KafkaGust' containing all the files will be created)
   * From Linux, Mac, Unix :
     * $ tar -xvf KafkaGust-Vx.y.tar.gz
   * From Windows :
     * Uncompress 'KafkaGust-Vx.y.tar.gz' twice (e.g : with 7zip)
+ * Note : By default a sub-directory 'KafkaGust' containing all the files will be created
 
 ## KafkaGust Producer command
 ### Command's pattern
@@ -43,7 +43,7 @@
  * `none` or `0`: No compression
  * `gzip` or `1` : Gzip codec
  * `snappy` or `2` : Snappy codec
- * Info : Overloads the two properties "*compression.codec*" and "*compressed.topics*" from the Kafka producer's native configuration
+ * Note : Overloads the two properties "*compression.codec*" and "*compressed.topics*" from the Kafka producer's native configuration
 * ***listSize*** : Two values :
  * `0` : Send every message, one by one
  * `1` : Send the list of messages
@@ -57,12 +57,12 @@
 * ***syncAsync*** : Two values :
  * `sync` or `0` : Synchronous send
  * `async` or `1` : Asynchronous send
- * Info : Overloads the property "*producer.type*" from the Kafka producer's native configuration
+ * Note : Overloads the property "*producer.type*" from the Kafka producer's native configuration
 * ***ackLevel*** : Three values :
  * `-1` : All in-sync
  * `0` : No ack at all
  * `1` : Leader ack only
- * Info : Overloads the property "*request.required.acks*" from the Kafka producer's native configuration
+ * Note : Overloads the property "*request.required.acks*" from the Kafka producer's native configuration
 * ***preHash*** : Three values :
  * `-1` : SHA pre-hash
  * `0` : No pre-hash at all (the message key is submitted to Kafka as is)
