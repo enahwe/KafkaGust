@@ -53,8 +53,8 @@
 * ***pause*** : The time to wait before to send the first message, can be usefull to synchronize the launching of consumers
 * ***nbrMsgsSkipped*** : The number of first messages to skip (for statisitics only, the first messages will be sent anyway)
 * ***maxTime*** :
- * `0` : No effect
- * If `>0` : The application will stop after this value (in ms)
+ * `-1` : No effect
+ * `>=0` : The producer will stop after this value (in ms)
 * ***syncAsync*** : Two values :
  * `sync` or `0` : Synchronous send
  * `async` or `1` : Asynchronous send
