@@ -33,7 +33,7 @@
 * ***campaignName*** : The campaign's name (e.g : *MyCampaign*)
  * [Note] : This parameter overloads the property "*client.id*" from the Kafka producer's native configuration
 * ***brokerUris*** : The URI list of brokers (e.g : *192.168.1.1:9092,192.168.1.2:9092*)
- * [Note] : This parameter overloads the property "*metadata.broker.list*" from the Kafka producer's native configuration
+ * [Note] : This parameter overloads the property `"*metadata.broker.list*"` from the Kafka producer's native configuration
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
 * ***msgTemplate*** : The template used to send the messages (e.g : *DefaultMsg*, *JsonMsg*, ...)
 * ***nbrMsgs*** : The number of messages to send in every gust (block of messages)
