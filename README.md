@@ -21,17 +21,17 @@
 ## KafkaGust Producer command
 ### Command's pattern
 ```
-# ./bin/Producer nbrThreads campaignName brokerUris topic msgTemplate nbrGusts nbrMsgs msgSize compression listSize sleep pause nbrMsgsSkipped maxTime syncAsync ackLevel preHash
+# ./bin/Producer campaignName nbrProducers brokerUris topic msgTemplate nbrGusts nbrMsgs msgSize compression listSize sleep pause nbrMsgsSkipped maxTime syncAsync ackLevel preHash
 ```
 ### Command example
 ```
-# ./bin/Producer 1 MyCampaign 127.0.0.1:9092 myTopic DefaultMsg -1 1000 10240 0 1 0 0 0 -1 sync -1 0
+# ./bin/Producer MyCampaign 1 127.0.0.1:9092 myTopic DefaultMsg -1 1000 10240 0 1 0 0 0 -1 sync -1 0
 ```
 
 ### Parameters
-* ***nbrThreads*** : The number of producers (or threads) to execute
 * ***campaignName*** : The campaign's name (e.g : *MyCampaign*)
  * [Note] : This parameter overloads the property `"client.id"` from the Kafka producer's native configuration
+* ***nbrProducers*** : The number of producers (or threads) to execute
 * ***brokerUris*** : The URI list of brokers (e.g : *192.168.1.1:9092,192.168.1.2:9092*)
  * [Note] : This parameter overloads the property `"metadata.broker.list"` from the Kafka producer's native configuration
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
