@@ -49,7 +49,7 @@
  * `<=1` : No effect, all the messages will be sent one by one to Kafka
  * `n>1` : The messages will be sent by list of 'n' messages to Kafka
  * [Note] : This feature use the 'send()' native method for sending a list of 'KeyedMessage'
-* ***sleep*** : The time sleep (in ms) between every message (can be useful to slow down the throughput)
+* ***sleep*** : The time sleep (in ms) between every message (can be useful to slow down willingly the throughput)
  * `0` : No slowdown
  * `t>0` : The producer will wait for 't' ms between every send
 * ***pause*** : The time to wait before to send the first message (can be usefull to synchronize the launching of consumers)
