@@ -48,8 +48,9 @@
 * ***listSize*** : Two values :
  * `0` : Send every message, one by one
  * `1` : Send the list of messages
-* ***sleep*** : The time sleep (in ms) between every message, useful to decrease the throughput
- * Note : A time sleep of zero won't cause any slowdown
+* ***sleep*** : The time sleep (in ms) between every message. Can be useful to slow down the throughput.
+ * `0` : No slowdown
+ * `>0` : The producer will wait for "sleep" ms between every send
 * ***pause*** : The time to wait before to send the first message, can be usefull to synchronize the launching of consumers
 * ***nbrMsgsSkipped*** : The number of first messages to skip (for statisitics only, the first messages will be sent anyway)
 * ***maxTime*** :
