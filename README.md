@@ -21,11 +21,11 @@
 ## KafkaGust Producer command
 ### Command's pattern
 ```
-# ./bin/Producer campaignName nbrProducers brokerUris topic msgTemplate nbrGusts nbrMsgs msgSize compressionCodec listSize sleep pause nbrMsgsSkipped maxTime syncAsync ackLevel preHash
+# ./bin/Producer campaignName nbrProducers brokerUris topic msgTemplate nbrGusts nbrMsgs msgSize compressionCodec listSize sleep pause nbrMsgsToSkip maxTime syncAsync ackLevel preHash statsGustsWindow
 ```
 ### Command example
 ```
-# ./bin/Producer MyCampaign 1 127.0.0.1:9092 myTopic DefaultMsg -1 1000 10240 none 1 0 0 0 -1 sync -1 none
+# ./bin/Producer MyCampaign 1 127.0.0.1:9092 myTopic DefaultMsg -1 1000 10240 none 1 0 0 0 -1 sync -1 none -1
 ```
 
 ### Parameters
@@ -71,6 +71,9 @@
  * `sha` or `1` : SHA pre-hashing
  * `md5` or `2` : MD5 pre-hashing
  * [Note] : The pre-hash consists to pre-calculate from a Kafka key a new Kafka key formated MD5 or SHA. This trick should increase two times better the homogeneous scattering of messages towards the multi-partitions topic (Kafka modulo Round-Robin). For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key))) Kafka will hash that new hexadecimal key and its routages will be more balanced.
+* ***statsGustsWindow*** :  The last N gusts necessary for statistic calculations
+ * `-1<=n<=1` : No effect, all the statistics will be start from the starting
+ * `n>1` : The statistics will be based on the last 'n' gusts
 
 ## KafkaGust Producer messages
 The sub-directory 'template' contains the two example templates "*DefaultMsg*" and "*JsonMsg*".
