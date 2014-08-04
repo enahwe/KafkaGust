@@ -46,7 +46,7 @@
  * `snappy` or `2` : Snappy codec
  * [Note] : This parameter overloads the two properties `"compression.codec"` and `"compressed.topics"` from the Kafka producer's native configuration
 * ***listSize*** : Allows to send lists of messages in once, rather to send messages one by one (can help to improve the throughput)
- * `<=1` : No effect, all the messages will be sent one by one to Kafka
+ * `-1<=n<=1` : No effect, all the messages will be sent one by one to Kafka
  * `n>1` : The messages will be sent by list of 'n' messages to Kafka
  * [Note] : This feature use the 'send()' native method for sending a list of 'KeyedMessage'
 * ***sleep*** : The time sleep (in ms) between every message (can be useful to slow down willingly the throughput)
