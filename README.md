@@ -31,9 +31,9 @@
 ### Parameters
 * ***nbrThreads*** : The number of producers (or threads) to execute
 * ***campaignName*** : The campaign's name (e.g : *MyCampaign*)
- * Info : Overloads the property "*client.id*" from the Kafka producer's native configuration
+ * Note : Overloads the property "*client.id*" from the Kafka producer's native configuration
 * ***brokerUris*** : The URI list of brokers (e.g : *192.168.1.1:9092,192.168.1.2:9092*)
- * Info : Overloads the property "*metadata.broker.list*" from the Kafka producer's native configuration
+ * Note : Overloads the property "*metadata.broker.list*" from the Kafka producer's native configuration
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
 * ***msgTemplate*** : The template used to send the messages (e.g : *DefaultMsg*, *JsonMsg*, ...)
 * ***nbrMsgs*** : The number of messages to send in every gust (block of messages)
@@ -67,7 +67,7 @@
  * `-1` : SHA pre-hash
  * `0` : No pre-hash at all (the message key is submitted to Kafka as is)
  * `1` : MD5 pre-hash
- * The pre-hash consists to pre-calculate from a Kafka key a new Kafka key formated MD5 or SHA. This trick should increase two times better the homogeneous scattering of messages towards the multi-partitions topic (Kafka modulo Round-Robin). For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key))) Kafka will hash that new hexadecimal key and its routages will be more balanced.
+ * Note : The pre-hash consists to pre-calculate from a Kafka key a new Kafka key formated MD5 or SHA. This trick should increase two times better the homogeneous scattering of messages towards the multi-partitions topic (Kafka modulo Round-Robin). For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key))) Kafka will hash that new hexadecimal key and its routages will be more balanced.
 
 ## KafkaGust Producer messages
 The sub-directory 'template' contains the two example templates "*DefaultMsg*" and "*JsonMsg*".
