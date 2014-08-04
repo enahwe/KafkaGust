@@ -21,7 +21,7 @@
 ## KafkaGust Producer command
 ### Command's pattern
 ```
-# ./bin/Producer campaignName nbrProducers brokerUris topic msgTemplate nbrGusts nbrMsgs msgSize compression listSize sleep pause nbrMsgsSkipped maxTime syncAsync ackLevel preHash
+# ./bin/Producer campaignName nbrProducers brokerUris topic msgTemplate nbrGusts nbrMsgs msgSize compressionCodec listSize sleep pause nbrMsgsSkipped maxTime syncAsync ackLevel preHash
 ```
 ### Command example
 ```
@@ -40,7 +40,7 @@
 * ***nbrMsgs*** : The number of messages to send inside every gust
  * If ***timeout=-1*** then several gusts of messages will be sent
 * ***msgSize*** : The size (in bytes) for every messsage
-* ***compression*** : The compression codec to compress the messages. Three values :
+* ***compressionCodec*** : The compression codec to compress the messages. Three values :
  * `none` or `0`: No compression
  * `gzip` or `1` : Gzip codec
  * `snappy` or `2` : Snappy codec
