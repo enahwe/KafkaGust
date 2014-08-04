@@ -21,11 +21,11 @@
 ## KafkaGust Producer command
 ### Command's pattern
 ```
-# ./bin/Producer nbrThreads campaignName brokerUris topic msgTemplate nbrMsgs msgSize compression listSize sleep pause nbrMsgsSkipped maxTime syncAsync ackLevel preHash
+# ./bin/Producer nbrThreads campaignName brokerUris topic msgTemplate nbrGusts nbrMsgs msgSize compression listSize sleep pause nbrMsgsSkipped maxTime syncAsync ackLevel preHash
 ```
 ### Command example
 ```
-# ./bin/Producer 1 MyCampaign 127.0.0.1:9092 myTopic DefaultMsg 1000 10240 0 1 0 0 0 -1 sync -1 0
+# ./bin/Producer 1 MyCampaign 127.0.0.1:9092 myTopic DefaultMsg -1 1000 10240 0 1 0 0 0 -1 sync -1 0
 ```
 
 ### Parameters
@@ -36,7 +36,8 @@
  * [Note] : This parameter overloads the property `"metadata.broker.list"` from the Kafka producer's native configuration
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
 * ***msgTemplate*** : The template used to send the messages (e.g : *DefaultMsg*, *JsonMsg*, ...)
-* ***nbrMsgs*** : The number of messages to send in every gust (block of messages)
+* ***nbrGusts*** : The number of gusts (blocks of messages) to send
+* ***nbrMsgs*** : The number of messages to send inside every gust
  * If ***timeout=-1*** then several gusts of messages will be sent
 * ***msgSize*** : The size (in bytes) for every messsage
 * ***compression*** : The compression codec to compress the messages. Three values :
