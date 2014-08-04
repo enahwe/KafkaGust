@@ -48,14 +48,14 @@
 * ***listSize*** : Two values :
  * `0` : Send every message, one by one
  * `1` : Send the list of messages
-* ***sleep*** : The time sleep (in ms) between every message. Can be useful to slow down the throughput.
+* ***sleep*** : The time sleep (in ms) between every message (can be useful to slow down the throughput).
  * `0` : No slowdown
  * `>0` : The producer will wait for "sleep" ms between every send
 * ***pause*** : The time to wait before to send the first message, can be usefull to synchronize the launching of consumers
 * ***nbrMsgsSkipped*** : The number of first messages to skip (for statisitics only, the first messages will be sent anyway)
-* ***maxTime*** :
- * `-1` : No effect
- * `>=0` : The producer will stop after this value (in ms)
+* ***maxTime*** : The time (in ms) after which the producer will stop.
+ * `-1` : No effect, the producer will never stop
+ * `>=0` : The producer will stop after this value
 * ***syncAsync*** : Two values :
  * `sync` or `0` : Synchronous send
  * `async` or `1` : Asynchronous send
