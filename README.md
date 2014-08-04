@@ -31,9 +31,9 @@
 ### Parameters
 * ***nbrThreads*** : The number of producers (or threads) to execute
 * ***campaignName*** : The campaign's name (e.g : *MyCampaign*)
- * [Note] : This parameter overloads the property "*client.id*" from the Kafka producer's native configuration
+ * [Note] : This parameter overloads the property `"client.id"` from the Kafka producer's native configuration
 * ***brokerUris*** : The URI list of brokers (e.g : *192.168.1.1:9092,192.168.1.2:9092*)
- * [Note] : This parameter overloads the property `"*metadata.broker.list*"` from the Kafka producer's native configuration
+ * [Note] : This parameter overloads the property `"metadata.broker.list"` from the Kafka producer's native configuration
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
 * ***msgTemplate*** : The template used to send the messages (e.g : *DefaultMsg*, *JsonMsg*, ...)
 * ***nbrMsgs*** : The number of messages to send in every gust (block of messages)
@@ -43,7 +43,7 @@
  * `none` or `0`: No compression
  * `gzip` or `1` : Gzip codec
  * `snappy` or `2` : Snappy codec
- * [Note] : This parameter overloads the two properties "*compression.codec*" and "*compressed.topics*" from the Kafka producer's native configuration
+ * [Note] : This parameter overloads the two properties `"compression.codec"` and "*compressed.topics*" from the Kafka producer's native configuration
 * ***listSize*** : Two values :
  * `0` : Send every message, one by one
  * `1` : Send the list of messages
@@ -57,12 +57,12 @@
 * ***syncAsync*** : Two values :
  * `sync` or `0` : Synchronous send
  * `async` or `1` : Asynchronous send
- * [Note] : This parameter overloads the property "*producer.type*" from the Kafka producer's native configuration
+ * [Note] : This parameter overloads the property `"producer.type"` from the Kafka producer's native configuration
 * ***ackLevel*** : Three values :
  * `-1` : All in-sync
  * `0` : No ack at all
  * `1` : Leader ack only
- * [Note] : Overloads the property "*request.required.acks*" from the Kafka producer's native configuration
+ * [Note] : Overloads the property `"request.required.acks"` from the Kafka producer's native configuration
 * ***preHash*** : Three values :
  * `-1` : SHA pre-hash
  * `0` : No pre-hash at all (the message key is submitted to Kafka as is)
