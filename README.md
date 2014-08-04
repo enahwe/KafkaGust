@@ -43,7 +43,7 @@
  * `none` or `0`: No compression
  * `gzip` or `1` : Gzip codec
  * `snappy` or `2` : Snappy codec
- * [Note] : This parameter overloads the two properties `"compression.codec"` and "*compressed.topics*" from the Kafka producer's native configuration
+ * [Note] : This parameter overloads the two properties `"compression.codec"` and `"compressed.topics"` from the Kafka producer's native configuration
 * ***listSize*** : Two values :
  * `0` : Send every message, one by one
  * `1` : Send the list of messages
