@@ -56,7 +56,7 @@
 * ***maxTime*** : The time (in ms) after which the producer will automatically stop
  * `-1` : No effect, the producer will never stop
  * `>=0` : The producer will stop after this value
-* ***syncAsync*** : Two values :
+* ***syncAsync*** : The Synchronous/Asynchronous mode
  * `sync` or `0` : Synchronous send
  * `async` or `1` : Asynchronous send
  * [Note] : This parameter overloads the property `"producer.type"` from the Kafka producer's native configuration
@@ -64,7 +64,7 @@
  * `-1` : All in-sync
  * `0` : No ack at all
  * `1` : Leader ack only
- * [Note] : Overloads the property `"request.required.acks"` from the Kafka producer's native configuration
+ * [Note] : This parameter overloads the property `"request.required.acks"` from the Kafka producer's native configuration
 * ***preHash*** : The pre-hashing algorithm to hash each message's key
  * `none` or `0` : No pre-hashing at all (each message's key will be submitted to Kafka as is)
  * `sha` or `1` : SHA pre-hashing
