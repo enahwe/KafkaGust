@@ -57,7 +57,7 @@
 * ***syncAsync*** : Two values :
  * `sync` or `0` : Synchronous send
  * `async` or `1` : Asynchronous send
- * [Note] : This parameter overloads the property "**producer.type**" from the Kafka producer's native configuration
+ * [Note] : This parameter overloads the property "*producer.type*" from the Kafka producer's native configuration
 * ***ackLevel*** : Three values :
  * `-1` : All in-sync
  * `0` : No ack at all
