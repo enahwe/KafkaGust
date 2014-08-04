@@ -46,12 +46,12 @@
  * `snappy` or `2` : Snappy codec
  * [Note] : This parameter overloads the two properties `"compression.codec"` and `"compressed.topics"` from the Kafka producer's native configuration
 * ***listSize*** : Allows to send lists of messages in once, rather to send messages one by one (can help to improve the throughput)
- * `-1<=n<=1` : No effect, all the messages will be sent one by one to Kafka
- * `n>1` : The messages will be sent by list of 'n' messages to Kafka
+ * `-1<=N<=1` : No effect, all the messages will be sent one by one to Kafka
+ * `N>1` : The messages will be sent by list of N messages to Kafka
  * [Note] : This feature use the 'send()' native method for sending a list of 'KeyedMessage'
 * ***sleep*** : The time sleep (in ms) between every message (can be useful to slow down willingly the throughput)
  * `0` : No slowdown
- * `t>0` : The producer will wait for 't' ms between every send
+ * `T>0` : The producer will wait for T ms between every send
 * ***pause*** : The time to wait before to send the first message (can be usefull to synchronize the launching of consumers)
 * ***nbrMsgsSkipped*** : The number of first messages to skip (for statisitics only, the first messages will be sent anyway)
 * ***maxTime*** : The time (in ms) after which the producer will automatically stop
@@ -72,8 +72,8 @@
  * `md5` or `2` : MD5 pre-hashing
  * [Note] : The pre-hash consists to pre-calculate from a Kafka key a new Kafka key formated MD5 or SHA. This trick should increase two times better the homogeneous scattering of messages towards the multi-partitions topic (Kafka modulo Round-Robin). For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key))) Kafka will hash that new hexadecimal key and its routages will be more balanced.
 * ***statsGustsWindow*** :  The last N gusts necessary for statistic calculations
- * `-1<=n<=1` : No effect, all the statistics will be start from the starting
- * `n>1` : The statistics will be based on the last 'n' gusts
+ * `-1<=N<=1` : No effect, all the statistics will be calculated from the starting
+ * `N>1` : The statistics will be calculated from the last N gusts
 
 ## KafkaGust Producer messages
 The sub-directory 'template' contains the two example templates "*DefaultMsg*" and "*JsonMsg*".
