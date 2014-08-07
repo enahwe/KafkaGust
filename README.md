@@ -21,7 +21,7 @@
 ## KafkaGust Producer command
 ### Command's pattern
 ```
-# ./bin/Producer campaignName nbrProducers brokerUris topic msgTemplate nbrGusts nbrMsgs msgSize compressionCodec listSize sleep pause nbrMsgsToSkip maxTime syncAsync ackLevel preHash statsGustsWindow
+# ./bin/Producer campaignName nbrProducers brokerUris topic msgTemplate nbrGusts nbrMsgs msgSize compressionCodec listSize sleep pause nbrMsgsToSkip maxTime syncAsync ackLevel preHash gustsWindowSize
 ```
 ### Command example
 ```
@@ -71,8 +71,8 @@
  * `sha` or `1` : SHA pre-hashing
  * `md5` or `2` : MD5 pre-hashing
  * [Note] : The pre-hash consists to pre-calculate from a Kafka key a new Kafka key formated MD5 or SHA. This trick should increase two times better the homogeneous scattering of messages towards the multi-partitions topic (Kafka modulo Round-Robin). For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key))) Kafka will hash that new hexadecimal key and its routages will be more balanced.
-* ***statsGustsWindow*** :  The last N gusts necessary for statistic calculations
- * `-1<=N<=1` : No effect, all the statistics will be calculated from the starting
+* ***gustsWindowSize*** :  The last N gusts (window) necessary for statistic calculations
+ * `-1<=N<=1` : No effect, all the statistics will be calculated from the beginning
  * `N>1` : The statistics will be calculated from the last N gusts
 
 ## KafkaGust Producer messages
