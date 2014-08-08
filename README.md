@@ -30,6 +30,22 @@
 ```html
 </br>
 ```
+
+```html
+<h2>Example of code</h2>
+
+<pre>
+    <div class="container">
+        <div class="block two first">
+            <h2>Your title</h2>
+            <div class="wrap">
+            //Your content
+            </div>
+        </div>
+    </div>
+</pre>
+```
+
 ### Parameters
 * ***campaignName*** : The campaign's name (e.g : *MyCampaign*)
  * [Note] : This parameter overloads the property `"client.id"` from the Kafka producer's native configuration
