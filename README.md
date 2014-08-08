@@ -27,24 +27,6 @@
 ```
 # ./bin/Producer MyCampaign 1 127.0.0.1:9092 myTopic DefaultMsg -1 1000 10240 none 1 0 0 0 -1 sync -1 none -1
 ```
-```html
-</br>
-```
-
-```html
-<h2>Example of code</h2>
-
-<pre>
-    <div class="container">
-        <div class="block two first">
-            <h2>Your title</h2>
-            <div class="wrap">
-            //Your content
-            </div>
-        </div>
-    </div>
-</pre>
-```
 
 ### Parameters
 * ***campaignName*** : The campaign's name (e.g : *MyCampaign*)
