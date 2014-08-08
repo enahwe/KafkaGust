@@ -20,14 +20,14 @@
     * Uncompress 'KafkaGust-Vx.y.tar.gz' twice (e.g : with 7zip)
  * Note : By default a sub-directory 'KafkaGust' containing all the files will be created
 
-## KafkaGust Producer command
+## Producers command
 ### Command's pattern
 ```
-# ./bin/Producer campaignName nbrProducers brokerUris topic msgTemplate nbrGusts nbrMsgsPerGust msgSize compressionCodec listSize sleep pause nbrMsgsToSkip maxTime syncAsync ackLevel preHash gustsWindowSize
+# ./bin/Producers campaignName nbrProducers brokerUris topic msgTemplate nbrGusts nbrMsgsPerGust msgSize compressionCodec listSize sleep pause nbrMsgsToSkip maxTime syncAsync ackLevel preHash gustsWindowSize
 ```
 ### Command example
 ```
-# ./bin/Producer MyCampaign 1 127.0.0.1:9092 myTopic DefaultMsg -1 1000 10240 none 1 0 0 0 -1 sync -1 none -1
+# ./bin/Producers MyCampaign 1 127.0.0.1:9092 myTopic DefaultMsg -1 1000 10240 none 1 0 0 0 -1 sync -1 none -1
 ```
 
 ### Parameters
@@ -76,7 +76,7 @@
  * `-1<=N<=1` : No effect, all the statistics will be calculated from the beginning
  * `N>1` : The statistics will be calculated from the last N gusts
 
-## KafkaGust Producer messages
+## Producers messages
 The sub-directory 'template' contains the two example templates "*DefaultMsg*" and "*JsonMsg*".
 
 Also, you can create your own format templates by inserting inside it the following variables :
