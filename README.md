@@ -1,7 +1,5 @@
 # KafkaGust
 
-[this is wrong](https://github.com/user/repo/blob/branch/docs/more_words.md)
-
 * **KafkaGust** has been written for producing high volumes of messages (based on message templates) by creating statistic files, and by using any kind of Kafka infrastructure
 * By defining a set of features (e.g, number of messages, template of message, size of each message, message variables, message key, compression, batch mode, ...) it becomes easy and quick to bench any Kafka environment by simply creating a single script containing a test campaign for sending gusts (or blocks) of messages
 * KafkaGust can also be useful for comparing the performances results with other Kafka client applications implemented in any programming language (e.g : Java, .NET C# API, Python)
