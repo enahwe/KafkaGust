@@ -4,7 +4,7 @@
 
 * **KafkaGust** has been developped for producing high volumes of messages (based on message templates) by creating statistic files, on any kind of Kafka infrastructure
 * By passing a set of arguments (e.g, number of gusts, number of messages in each gust, size of each message, the message's template, the compression codec, the batch mode, ...) it becomes easier and quicker to launch test campaigns onto any Kafka environment by calling a single script responsible for sending gusts of messages and the production of statistics continuously
-* KafkaGust can also be useful for comparing the performances results with other Kafka client applications implemented in any programming language (e.g : Java, .NET C# API, Python)
+* KafkaGust can also be useful for comparing the performances results with any kind of Kafka client applications developped in different programming languages (e.g : C#, Python...)
 * KafkaGust uses the Java native Kafka library and can be executed directly from any kind of Operating System (e.g, Windows, Mac, Linux)
 
 ## Requirements
