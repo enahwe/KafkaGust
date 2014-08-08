@@ -27,7 +27,9 @@
 ```
 # ./bin/Producer MyCampaign 1 127.0.0.1:9092 myTopic DefaultMsg -1 1000 10240 none 1 0 0 0 -1 sync -1 none -1
 ```
-
+```html
+<br>
+```
 ### Parameters
 * ***campaignName*** : The campaign's name (e.g : *MyCampaign*)
  * [Note] : This parameter overloads the property `"client.id"` from the Kafka producer's native configuration
