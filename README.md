@@ -30,7 +30,7 @@
 # ./bin/Producers MyCampaign 1 127.0.0.1:9092 myTopic DefaultMsg -1 1000 10240 none 1 0 0 0 -1 sync -1 none -1
 ```
 
-### Parameters
+### Arguments
 * ***campaignName*** : The campaign's name (e.g : *MyCampaign*)
  * [Note] : This parameter overloads the property `"client.id"` from the Kafka producer's native configuration
 * ***nbrProducers*** : The number of producers (or threads) to execute
@@ -76,7 +76,7 @@
  * `-1<=N<=1` : No effect, all the statistics will be calculated from the beginning
  * `N>1` : The statistics will be calculated from the last N gusts
 
-## Templates of messages for producers
+## Message template for producers
 The sub-directory 'template' contains the two example templates "*DefaultMsg*" and "*JsonMsg*".
 
 Also, you can create your own format templates by inserting inside it the following variables :
