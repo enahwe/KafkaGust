@@ -1,3 +1,5 @@
+[Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8CHMFNQF6VJL2)
+
 # KafkaGust
 
 * **KafkaGust** has been written for producing high volumes of messages (based on message templates) by creating statistic files, and by using any kind of Kafka infrastructure
