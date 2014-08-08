@@ -81,7 +81,7 @@ The sub-directory 'template' contains the two example templates "*DefaultMsg*" a
 
 Also, you can create your own format templates by inserting inside it the following variables :
 
-### Variables commons to all messages
+### Common variables (same for all messages)
 * ${NUMBER_THREADS} : The ***nbrThreads*** parameter
 * ${CAMPAIGN_TITLE} : The ***campaignTitle*** parameter
 * ${URI_LIST} : The ***uriList*** parameter
@@ -98,7 +98,7 @@ Also, you can create your own format templates by inserting inside it the follow
 * ${PRODUCER_ACK} : The ***producerAck*** parameter
 * ${PRE_HASH} : The ***preHash*** parameter
 
-### Variables for each message
+### Message variables (specific for each message)
 Standard variables
 * ${MESSAGE_KEY} : The message's Kafka key
 * ${MESSAGE_CREATION_TIME} : The absolute time (ms) when the message has been created
