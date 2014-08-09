@@ -1,5 +1,7 @@
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif "Donate for KafkaGust")](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8CHMFNQF6VJL2)
 
+![](KafkaGust.png)
+
 # KafkaGust
 
 * **KafkaGust** has been developped for producing high volumes of messages (based on message templates) on any kind of Kafka infrastructure, by creating statistic files
