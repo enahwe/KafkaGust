@@ -2,12 +2,12 @@
 (https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8CHMFNQF6VJL2)
 
 ![](/KafkaGust.png "KafkaGust")
-
+|
 * **KafkaGust** has been developped for producing high volumes of messages (based on message templates) on any kind of Kafka infrastructure, by creating statistic files
 * By passing a set of arguments (e.g, number of gusts, number of messages in each gust, size of each message, the message's template, the compression codec, the batch mode, ...) it becomes easier and quicker to launch producers and testing campaigns onto any Kafka environment by calling a single script responsible for sending gusts of messages and the production of statistics continuously
 * KafkaGust can also be useful for comparing the performances results with any kind of Kafka client applications developped in different programming languages (e.g : C#, Python...)
 * KafkaGust uses the Java native Kafka library and can be executed directly from any kind of Operating System (e.g, Windows, Mac, Linux)
-
+|
 ## Requirements
 * A JDK version 1.7 minimum must be installed
 * The JAVA_HOME environment variable must be set
