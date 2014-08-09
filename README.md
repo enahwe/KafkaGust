@@ -1,5 +1,5 @@
-<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
-<meta name="author" content="Hege Refsnes">
+<meta name="keywords" content="KafkaGust, Kafka Gust, Kafka, Apache Kafka, Gust, Kafka Bench">
+<meta name="author" content="Philippe ROSSIGNOL">
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif "Donate for KafkaGust")]
 (https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8CHMFNQF6VJL2)
 
