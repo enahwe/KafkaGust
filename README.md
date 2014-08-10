@@ -1,6 +1,7 @@
-<meta name="keywords" content="KafkaGust, Kafka Gust, Kafka, Apache Kafka, Gust, Kafka Bench">
+<meta name="keywords" content="kafkagust,Kafka gust,kafka,apache kafka,gust,kafka bench,big data,lambda architecture,cassandra,apache cassandra">
 <meta name="description" content="KafkaGust is a flexible and useful tool to quickly test high data volumes with Kafka">
-<meta name="author" content="Philippe ROSSIGNOL">
+<meta name="author" content="Philippe ROSSIGNOL"></head>
+
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif "Donate for KafkaGust")]
 (https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8CHMFNQF6VJL2)
 
