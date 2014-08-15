@@ -40,9 +40,9 @@
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
 * ***msgTemplate*** : The template used to send the messages (e.g : *TextMsg*, *JsonMsg*, ...)
 * ***msgSize*** : The size (in bytes) for every messsage
-* ***msgKey*** : The message key (or the Kafka key) that will be hashed
+* ***msgKey*** : The message key or the Kafka key that will be hashed, in order to load-balance each message towards the correct partition (by using the well-known algorithm of round-robin)
  * `-1` : No key, the message will be load-balanced to the partitions in a random way
- * `I:D` : With the Index I>=0 and the Direction D={-1;0;1} (-1=Backward; 0=Random; 1=Forward). E.g, `0:0` means that the key will be picked up in a random way from for example the file TextMsg-datas.txt
+ * `I:D` : With Index I>=0 and Direction D={-1;0;1} (-1=Backward; 0=Random; 1=Forward). E.g, `0:0` means that the key will be picked up in a random way from for example the file TextMsg-datas.txt
 * ***nbrGusts*** : The number of gusts (blocks of messages) to send
 * ***nbrMsgsPerGust*** : The number of messages to send for every gust
 * ***gustsWindowSize*** :  The last N gusts (window) necessary for statistic calculations
