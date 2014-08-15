@@ -39,9 +39,13 @@
  * [Note] : This parameter overloads the property `"metadata.broker.list"` from the Kafka producer's native configuration
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
 * ***msgTemplate*** : The template used to send the messages (e.g : *DefaultMsg*, *JsonMsg*, ...)
+* ***msgSize*** : The size (in bytes) for every messsage
+* ***msgKey*** : The key
 * ***nbrGusts*** : The number of gusts (blocks of messages) to send
 * ***nbrMsgsPerGust*** : The number of messages to send for every gust
-* ***msgSize*** : The size (in bytes) for every messsage
+* ***gustsWindowSize*** :  The last N gusts (window) necessary for statistic calculations
+ * `-1<=N<=1` : No effect, all the statistics will be calculated from the beginning
+ * `N>1` : The statistics will be calculated from the last N gusts
 * ***compressionCodec*** : The compression codec to compress the messages. Three values :
  * `none` or `0`: No compression
  * `gzip` or `1` : Gzip codec
@@ -73,9 +77,7 @@
  * `sha` or `1` : SHA pre-hashing
  * `md5` or `2` : MD5 pre-hashing
  * [Note] : The pre-hash consists to pre-calculate from a Kafka key a new Kafka key formated MD5 or SHA. This trick should increase two times better the homogeneous scattering of messages towards the multi-partitions topic (Kafka modulo Round-Robin). For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key))) Kafka will hash that new hexadecimal key and its routages will be more balanced.
-* ***gustsWindowSize*** :  The last N gusts (window) necessary for statistic calculations
- * `-1<=N<=1` : No effect, all the statistics will be calculated from the beginning
- * `N>1` : The statistics will be calculated from the last N gusts
+
 
 ## Message template for producers
 The sub-directory 'template' contains the two example templates "*DefaultMsg*" and "*JsonMsg*".
