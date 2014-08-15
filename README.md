@@ -24,14 +24,14 @@
 ## Command for producers
 ### Command pattern
 ```
-# ./bin/Producers campaignName nbrProducers brokerUris topic msgTemplate nbrGusts nbrMsgsPerGust msgSize compressionCodec listSize sleep pause nbrMsgsToSkip maxTime syncAsync ackLevel preHash gustsWindowSize
+# ./bin/Producers campaignName nbrProducers brokerUris topic msgTemplate msgSize msgKey nbrGusts nbrMsgsPerGust gustsWindowSize compressionCodec listSize sleep pause nbrMsgsToSkip maxTime syncAsync ackLevel preHash
 ```
 ### Command example
 ```
-# ./bin/Producers MyCampaign 1 127.0.0.1:9092 myTopic DefaultMsg -1 1000 10240 none 1 0 0 0 -1 sync -1 none -1
+# ./bin/Producers MyCampaign 1 127.0.0.1:9092 myTopic DefaultMsg 10240 1:0 -1 1000 -1 none -1 0 0 0 -1 sync -1 none
 ```
 
-### Arguments
+### Arguments (19)
 * ***campaignName*** : The campaign's name (e.g : *MyCampaign*)
  * [Note] : This parameter overloads the property `"client.id"` from the Kafka producer's native configuration
 * ***nbrProducers*** : The number of producers (or threads) to execute
