@@ -24,7 +24,7 @@
 ## Getting started
 * Consider the shell file `ProducersSample` as a reference to copy
 * Copy-paste the shell file `ProducersSample` to your prefered file (e.g, `MyFirstProducers`)
-* Edit your new shell file and change at the minimum the URI (`127.0.0.1:9092`) by your Kafka broker (or your list of Kafka brokers)
+* Edit your new shell file and change at the minimum the URI (`127.0.0.1:9092`) by the URI of your Kafka broker (or the URIs list of your Kafka brokers separated by a comma)
 * Ensure that your Kafka is running and launch your shell, it will start to strafe gusts of messages towards your Kafka broker(s)
 
 ## Command for to run producers
