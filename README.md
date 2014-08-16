@@ -86,7 +86,7 @@
  * `sync` or `0` : Synchronous send
  * `async` or `1` : Asynchronous send, the messages are sent asynchronously in a background thread
  * [Note] : This parameter overloads the property `"producer.type"` from the Kafka producer's native configuration
-* ***ackLevel*** : The Kafka acknowledgement level
+* ***ackLevel*** : The Kafka acknowledgement level. This value controls when a produce request is considered completed
  * `-1` : All in-sync
  * `0` : No ack at all
  * `1` : Leader ack only
