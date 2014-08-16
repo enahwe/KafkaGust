@@ -18,8 +18,8 @@
   * From Linux, Mac, Unix :
     * ```$ tar -xvf KafkaGust-Vx.y.tar.gz```
   * From Windows :
-    * Uncompress 'KafkaGust-Vx.y.tar.gz' twice (e.g : with 7zip)
- * Note : By default a sub-directory 'KafkaGust' containing all the files will be created
+    * Use your prefered tool to uncompress the installation file (e.g : with 7zip)
+* By default, a sub-directory named 'KafkaGust' and containing all the files will be created
 
 ## Getting started
 * Consider the default shell file `ProducersSample` as a reference to copy
