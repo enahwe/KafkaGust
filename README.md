@@ -9,7 +9,7 @@
 * KafkaGust uses the Java native Kafka library and can be executed directly from any kind of Operating System (e.g, Windows, Mac, Linux)
 
 ## Requirements
-* A JDK version 1.7 minimum must be installed
+* A JDK version 1.7 minimum must be installed on the same machine
 * The JAVA_HOME environment variable must be set
 
 ## Installation
