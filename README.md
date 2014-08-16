@@ -92,12 +92,10 @@
  * `0` : No ack at all
  * `1` : Leader ack only
  * [Note] : This parameter overloads the property `"request.required.acks"` from the Kafka producer's native configuration
-* ***preHash*** : It's possible to transform every message's key into a MD5 or SHA hexadecimal string before to submit it to kafka (before the hashing phase)
+* ***preHash*** : It's possible to transform every message's key into a MD5 or SHA hexadecimal string before to submit it to kafka (before the hashing phase). In some cases it's possible by using this trick, to increase two times better the homogeneous load-balancing of messages towards the Kafka partitions
  * `none` or `0` : No transformation
  * `sha` or `1` : Transforms the message key into a SHA hexadecimal string before to submit it to kafka
  * `md5` or `2` : Transforms the message key into a MD5 hexadecimal string before to submit it to kafka
- * [Note] : In some cases it's possible by using this trick, to increase two times better the homogeneous load-balancing of messages towards the Kafka partitions
-
 
 ## Message template for producers
 The sub-directory 'template' contains the two example templates "*DefaultMsg*" and "*JsonMsg*".
