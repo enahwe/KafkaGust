@@ -76,11 +76,11 @@
  * `0` : No ack at all
  * `1` : Leader ack only
  * [Note] : This parameter overloads the property `"request.required.acks"` from the Kafka producer's native configuration
-* ***preHash*** : The pre-hashing algorithm to hash each message's key
- * `none` or `0` : No pre-hashing at all (each message's key will be submitted to Kafka as is)
- * `sha` or `1` : SHA pre-hashing
- * `md5` or `2` : MD5 pre-hashing
- * [Note] : The pre-hash consists to pre-calculate from a Kafka key a new Kafka key formated MD5 or SHA. This trick should increase two times better the homogeneous scattering of messages towards the multi-partitions topic (Kafka modulo Round-Robin). For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key))) Kafka will hash that new hexadecimal key and its routages will be more balanced.
+* ***preHash*** : It's possible to transform every message's key into a MD5 or SHA hexadecimal string before the hashing phase
+ * `none` or `0` : No transformation
+ * `sha` or `1` : Transform the message key into a SHA hexadecimal string
+ * `md5` or `2` : Transform the message key into a MD5 hexadecimal string
+ * [Note] : This trick tends to increase two times better the homogeneous scattering of messages towards the multi-partitions topic (Kafka modulo Round-Robin). For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key))) Kafka will hash that new hexadecimal key and its routages will be more balanced.
 
 
 ## Message template for producers
