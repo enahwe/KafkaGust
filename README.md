@@ -80,7 +80,7 @@
  * `none` or `0` : No transformation
  * `sha` or `1` : Transforms the message key into a SHA hexadecimal string before to submit it to kafka
  * `md5` or `2` : Transforms the message key into a MD5 hexadecimal string before to submit it to kafka
- * [Note] : This trick tends to increase two times better the homogeneous scattering of messages towards the multi-partitions topic (Kafka modulo Round-Robin). For example, by submitting a MD5 hexadecimal key (e.g : New_Kafka_key = HEX(MD5(Previous_Kafka_key))) Kafka will hash that new hexadecimal key and its routages will be more balanced.
+ * [Note] : In some cases it's possible by using this trick, to increase two times better the homogeneous load-balancing of messages towards the Kafka partitions
 
 
 ## Message template for producers
