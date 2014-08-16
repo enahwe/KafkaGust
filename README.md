@@ -54,8 +54,8 @@
 * ***msgKey*** : This is the definition of the message key (or the Kafka key) that will be hashed, in order to load-balance every message towards the correct Kafka partition (by using the well-known algorithm of round-robin)
  * `-1` : No definition, all the messages will be load-balanced to the partitions in a random way
  * `I:D` : This definition must use the file '`[msgModel]-datas.txt`', where Index I>=0 and Direction D={-1;0;1} (-1=Backward; 0=Random; 1=Forward)
- * E.g, `0:0` Means that the message key will corresponds in the file to the column at position 0 and will be picked up in a Random way
- * E.g, `1:-1` Means that the message key will corresponds in the file to the column at position 1 and will be picked up in a Backward way
+ * E.g, The definition `0:0` means that the message key will corresponds in the file '`[msgModel]-datas.txt`' to the column at position 0 and will be picked up in a Random way
+ * E.g, The definition `1:-1` means that the message key will corresponds in the file '`[msgModel]-datas.txt`' to the column at position 1 and will be picked up in a Backward way
 * ***nbrGusts*** : The number of gusts (blocks of messages) to send
 * ***nbrMsgsPerGust*** : The number of messages to send for every gust
 * ***gustsWindowSize*** :  The last N gusts (window) necessary for statistic calculations
