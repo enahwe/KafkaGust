@@ -22,6 +22,7 @@
 * By default, a sub-directory named 'KafkaGust' and containing all the files will be created
 
 ## Getting started
+* Go to the directory of KafkaGust installation
 * Consider the default shell file `ProducersSample` as a reference to copy
 * Copy-paste the shell file `ProducersSample` to your prefered file (e.g, `MyFirstProducers`)
 * Edit your new shell file and change at the minimum the URI (`127.0.0.1:9092`) by the URI of your Kafka broker (or the URIs list of your Kafka brokers separated by a comma)
