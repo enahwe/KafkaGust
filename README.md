@@ -76,7 +76,7 @@
 * ***pause*** : The time to wait for at the starting before to send the first messages. This can be usefull to synchronize the launching with any Kafka consumers
  * `0` : No pause
  * `T>0` : The producers will wait for `T` ms at the starting before to send the first messages
-* ***nbrMsgsSkipped*** : The number of messages to skip at the starting for statisitic calculations (even if those messages are sent anyway). This can be usefull if we want to fire only one gust with lot of messages without to be tributary at the starting of the gradual increase in speed of Kafka 
+* ***nbrMsgsSkipped*** : The number of messages to skip at the starting for statisitic calculations (even if those messages are sent anyway). This can be usefull if we want to fire only one gust with lot of messages without to depend at the starting of the gradual increase in speed of Kafka 
  * `0` : No message skipped at all
  * `N>0` : The `N` first messages will be skipped for the statistic calculations
 * ***maxTime*** : The time (in ms) after which the producer will automatically stop
