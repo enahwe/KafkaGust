@@ -79,7 +79,7 @@
 * ***nbrMsgsSkipped*** : The number of messages to skip at the starting for statisitic calculations (even if those messages are sent anyway). This can be usefull if we want to fire only one gust with lot of messages without to depend at the starting of the gradual increase in speed of Kafka 
  * `0` : No message skipped at all
  * `N>0` : The `N` first messages will be skipped for the statistic calculations
-* ***maxTime*** : The time (in ms) after which the producer will automatically stop
+* ***maxTime*** : The time (in ms) or the timeout after which the producer will automatically stop
  * `-1` : No effect, the producer will never stop
  * `>=0` : The producer will stop after this value
 * ***syncAsync*** : The Synchronous/Asynchronous mode.  By setting the producer to `async` we allow batching together of requests (which is great for throughput) but open the possibility of a failure of the client machine dropping unsent data
