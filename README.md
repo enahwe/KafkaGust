@@ -35,7 +35,7 @@
 ## Command details to run producers
 ### Command pattern
 ```
-# ./bin/Producers campaignName nbrProducers brokerUris topic msgModel msgSize msgKey nbrGusts nbrMsgsPerGust gustsWindowSize compressionCodec listSize sleep pause nbrMsgsToSkip maxTime syncAsync ackLevel preHash
+# ./bin/Producers campaignName nbrProducers brokerUris topic msgModel msgSize msgKeyDef nbrGusts nbrMsgsPerGust gustsWindowSize compressionCodec listSize sleep pause nbrMsgsToSkip maxTime syncAsync ackLevel preHash
 ```
 ### Command example
 ```
@@ -51,7 +51,7 @@
 * ***topic*** : The topic's name (e.g : *myTopic*)
 * ***msgModel*** : The message model name that is the message template prefix (e.g : *TextMsg*, *JsonMsg*, ...)
 * ***msgSize*** : The size (in bytes) of every messsage to send
-* ***msgKey*** : This is the definition of the message key (or the Kafka key) that will be hashed, in order to load-balance every message towards the correct Kafka partition (by using the well-known algorithm of round-robin)
+* ***msgKeyDef*** : This is the definition of the message key (or the Kafka key) that will be hashed, in order to load-balance every message towards the correct Kafka partition (by using the well-known algorithm of round-robin)
  * `-1` : No definition, all the messages will be load-balanced to the partitions in a random way
  * `I:D` : This definition must use the file '`[msgModel]-datas.txt`', where Index I>=0 and Direction D={-1;0;1} (-1=Backward; 0=Random; 1=Forward)
  * E.g, The definition `0:0` means that the message key will corresponds in the file '`[msgModel]-datas.txt`' to the column at position 0 and will be picked up in a Random way
