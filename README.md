@@ -68,7 +68,7 @@
  * [Note] : This parameter overloads the two properties `"compression.codec"` and `"compressed.topics"` from the Kafka producer's native configuration
 * ***listSize*** : It's possible to send a group or a list of messages in once, rather to send all the messages one by one. This can help to improve significantly the producing throughput.
  * `-1<=N<=1` : No effect, all the messages will be sent one by one to Kafka
- * `N>1` : The messages will be sent by list of N messages to Kafka
+ * `N>1` : The messages will be sent by groups or lists of N messages to Kafka
  * [Note] : This feature use the 'send()' native method for sending a list of 'KeyedMessage'
 * ***sleep*** : The time sleep (in ms) between every message (can be useful to slow down willingly the throughput)
  * `0` : No slowdown
