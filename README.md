@@ -72,8 +72,10 @@
  * [Note] : This feature use the native method '`send()`' in charge of sending lists of 'KeyedMessage'
 * ***sleep*** : The time sleep (in ms) between every message.This can be useful to slow down willingly the producing throughput
  * `0` : No slowdown
- * `T>0` : The producer will wait for `T` ms between every sending
-* ***pause*** : The time to wait before to send the first message (can be usefull to synchronize the launching of consumers)
+ * `T>0` : The producers will wait for `T` ms between every sending
+* ***pause*** : The time to wait for at the starting before to send the first messages. This can be usefull to synchronize the launching with any Kafka consumers
+* `0` : No pause
+ * `T>0` : The producers will wait for `T` ms at the starting before to send the first messages
 * ***nbrMsgsSkipped*** : The number of first messages to skip (for statisitics only, the first messages will be sent anyway)
 * ***maxTime*** : The time (in ms) after which the producer will automatically stop
  * `-1` : No effect, the producer will never stop
