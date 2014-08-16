@@ -74,7 +74,7 @@
  * `0` : No slowdown
  * `T>0` : The producers will wait for `T` ms between every sending
 * ***pause*** : The time to wait for at the starting before to send the first messages. This can be usefull to synchronize the launching with any Kafka consumers
-* `0` : No pause
+ * `0` : No pause
  * `T>0` : The producers will wait for `T` ms at the starting before to send the first messages
 * ***nbrMsgsSkipped*** : The number of first messages to skip (for statisitics only, the first messages will be sent anyway)
 * ***maxTime*** : The time (in ms) after which the producer will automatically stop
