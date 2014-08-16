@@ -30,7 +30,7 @@
 * Go to the sub-directory `./log/producers` and you will discover two actually usefull files :
  * a TXT file related on the standard output
  * a CSV file recalling the statistics of all the gusts of messages
-* Stop your shell with Ctrl-C
+* Stop your shell machine gun with Ctrl-C
 
 ## Command for to run producers
 ### Command pattern
