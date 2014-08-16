@@ -4,7 +4,7 @@
 ![](/KafkaGust.png "KafkaGust")
 
 * **KafkaGust** has been developped for producing high volumes of messages (based on message templates) on any kind of Kafka infrastructure, by creating statistic files
-* By passing a set of arguments (e.g, number of gusts, number of messages in each gust, size of each message, the message's template, the compression codec, the batch mode, ...) it becomes easier and quicker to launch producers and testing campaigns onto any Kafka environment by calling a single script responsible for sending gusts of messages and the production of statistics continuously
+* By passing a set of arguments (e.g, number of gusts, number of messages in each gust, size of each message, the message's model, the compression codec, the batch mode, ...) it becomes easier and quicker to launch producers and testing campaigns onto any Kafka environment by calling a single script responsible for sending gusts of messages and the production of statistics continuously
 * KafkaGust can also be useful for comparing the performances results with any kind of Kafka client applications developped in different programming languages (e.g : C#, Python...)
 * KafkaGust uses the Java native Kafka library and can be executed directly from any kind of Operating System (e.g, Windows, Mac, Linux)
 
@@ -24,7 +24,7 @@
 ## Command for producers
 ### Command pattern
 ```
-# ./bin/Producers campaignName nbrProducers brokerUris topic msgTemplate msgSize msgKey nbrGusts nbrMsgsPerGust gustsWindowSize compressionCodec listSize sleep pause nbrMsgsToSkip maxTime syncAsync ackLevel preHash
+# ./bin/Producers campaignName nbrProducers brokerUris topic msgModel msgSize msgKey nbrGusts nbrMsgsPerGust gustsWindowSize compressionCodec listSize sleep pause nbrMsgsToSkip maxTime syncAsync ackLevel preHash
 ```
 ### Command example
 ```
@@ -38,11 +38,13 @@
 * ***brokerUris*** : The URI list of brokers (e.g : *192.168.1.1:9092,192.168.1.2:9092*)
  * [Note] : This parameter overloads the property `"metadata.broker.list"` from the Kafka producer's native configuration
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
-* ***msgTemplate*** : The template used to send the messages (e.g : *TextMsg*, *JsonMsg*, ...)
+* ***msgModel*** : The message model or the message template prefix (e.g : *TextMsg*, *JsonMsg*, ...)
 * ***msgSize*** : The size (in bytes) for every messsage
 * ***msgKey*** : The message key or the Kafka key that will be hashed, in order to load-balance each message towards the correct partition (by using the well-known algorithm of round-robin)
  * `-1` : No key, the message will be load-balanced to the partitions in a random way
- * `I:D` : With Index I>=0 and Direction D={-1;0;1} (-1=Backward; 0=Random; 1=Forward). E.g, `0:0` means that the key will be picked up in a random way from for example the file TextMsg-datas.txt
+ * `I:D` : With Index I>=0 and Direction D={-1;0;1} (-1=Backward; 0=Random; 1=Forward).
+ * E.g, `1:0` means that the key will be picked up at position 1 in a random way (from for example the file TextMsg-datas.txt)
+ * E.g, `0:1` means that the key will be picked up at position 0 in a backward way (from for example the file TextMsg-datas.txt)
 * ***nbrGusts*** : The number of gusts (blocks of messages) to send
 * ***nbrMsgsPerGust*** : The number of messages to send for every gust
 * ***gustsWindowSize*** :  The last N gusts (window) necessary for statistic calculations
