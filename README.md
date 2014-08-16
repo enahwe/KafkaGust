@@ -60,7 +60,7 @@
 * ***nbrMsgsPerGust*** : The number of messages per gust to send
 * ***gustsWindowSize*** :  The number of gusts necessary for the statistic window calculations
  * `-1<=N<=1` : No effect, all the statistics will be calculated from the beginning
- * `N>1` : The statistics will be calculated from the last N gusts
+ * `N>1` : The statistics will be calculated since the last N gusts
 * ***compressionCodec*** : The compression codec to compress the messages. Three values :
  * `none` or `0`: No compression
  * `gzip` or `1` : Gzip codec
