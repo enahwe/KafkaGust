@@ -81,7 +81,8 @@
  * `N>0` : The `N` first messages will be skipped for the statistic calculations
 * ***maxTime*** : The time (in ms) or the timeout after which the producer will automatically stop
  * `-1` : No effect, the producer will never stop
- * `>=0` : The producer will stop after this value
+ * `0` : The producers will stop immediatly
+ * `T>0` : The producers will stop after `T` ms
 * ***syncAsync*** : The Synchronous/Asynchronous mode.  By setting the producer to `async` we allow batching together of requests (which is great for throughput) but open the possibility of a failure of the client machine dropping unsent data
  * `sync` or `0` : Synchronous send
  * `async` or `1` : Asynchronous send, the messages are sent asynchronously in a background thread
