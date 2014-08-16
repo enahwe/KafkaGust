@@ -25,7 +25,10 @@
 * Consider the shell file `ProducersSample` as a reference to copy
 * Copy-paste the shell file `ProducersSample` to your prefered file (e.g, `MyFirstProducers`)
 * Edit your new shell file and change at the minimum the URI (`127.0.0.1:9092`) by the URI of your Kafka broker (or the URIs list of your Kafka brokers separated by a comma)
-* Ensure that your Kafka is running and launch your shell, it will start to strafe gusts of messages towards your Kafka broker(s)
+* Ensure that your Kafka is running and launch your shell, it will start to strafe gusts of messages towards your Kafka broker(s) and will show you the producing statistics in real time
+* Go to the sub-directory /log/producers and you will discover two files :
+ * the text file related on the standard output
+ * the csv file related on the statistics
 
 ## Command for to run producers
 ### Command pattern
