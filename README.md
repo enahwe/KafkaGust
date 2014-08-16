@@ -40,7 +40,7 @@
 * ***topic*** : The topic's name (e.g : *myTestTopic*)
 * ***msgModel*** : The message model or the message template prefix (e.g : *TextMsg*, *JsonMsg*, ...)
 * ***msgSize*** : The size (in bytes) for every messsage
-* ***msgKey*** : The message key or the Kafka key that will be hashed, in order to load-balance each message towards the correct partition (by using the well-known algorithm of round-robin)
+* ***msgKey*** : Use the file `[msgModel]-datas.txt`. This is the definition of the message key (or the Kafka key) that will be hashed, in order to load-balance each message towards the correct Kafka partition (by using the well-known algorithm of round-robin)
  * `-1` : No key, the message will be load-balanced to the partitions in a random way
  * `I:D` : With Index I>=0 and Direction D={-1;0;1} (-1=Backward; 0=Random; 1=Forward).
  * E.g, `1:0` means that the key will be picked up at position 1 in a random way (from for example the file TextMsg-datas.txt)
