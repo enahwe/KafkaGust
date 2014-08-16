@@ -48,7 +48,7 @@
 * ***nbrProducers*** : The number of producers (or threads) to execute
 * ***brokerUris*** : The URI list of brokers (e.g : *192.168.1.1:9092,192.168.1.2:9092*)
  * [Note] : This parameter overloads the property `"metadata.broker.list"` from the Kafka producer's native configuration
-* ***topic*** : The topic's name (e.g : *myTestTopic*)
+* ***topic*** : The topic's name (e.g : *myTopic*)
 * ***msgModel*** : The message model or the message template prefix (e.g : *TextMsg*, *JsonMsg*, ...)
 * ***msgSize*** : The size (in bytes) for every messsage
 * ***msgKey*** : This is the definition of the message key (or the Kafka key) that will be hashed, in order to load-balance every message towards the correct Kafka partition (by using the well-known algorithm of round-robin)
