@@ -58,7 +58,7 @@
  * E.g, The definition `1:-1` means that the message key will corresponds in the file '`[msgModel]-datas.txt`' to the column at position 1 and will be picked up in a Backward way
 * ***nbrGusts*** : The number of gusts (blocks of messages) to send
 * ***nbrMsgsPerGust*** : The number of messages per gust to send
-* ***gustsWindowSize*** :  The last N gusts (window) necessary for statistic calculations
+* ***gustsWindowSize*** :  The number of gusts necessary for the statistic window calculations
  * `-1<=N<=1` : No effect, all the statistics will be calculated from the beginning
  * `N>1` : The statistics will be calculated from the last N gusts
 * ***compressionCodec*** : The compression codec to compress the messages. Three values :
