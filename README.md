@@ -32,7 +32,7 @@
  * a CSV file recalling the statistics of all the gusts of messages
 * Stop your shell machine gun with Ctrl-C
 
-## Command for to run producers
+## Command details to run producers
 ### Command pattern
 ```
 # ./bin/Producers campaignName nbrProducers brokerUris topic msgModel msgSize msgKey nbrGusts nbrMsgsPerGust gustsWindowSize compressionCodec listSize sleep pause nbrMsgsToSkip maxTime syncAsync ackLevel preHash
