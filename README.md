@@ -21,7 +21,7 @@
     * Use your prefered tool to uncompress the installation file (e.g : with 7zip)
 * By default, a sub-directory named 'KafkaGust' and containing all the files will be created
 
-## Getting started
+## Getting started (start the engine)
 * Go to the directory of KafkaGust installation
 * Consider the default shell file `ProducersSample` as a reference to copy
 * Copy-paste the shell file `ProducersSample` to your prefered file (e.g, `MyFirstProducers`)
