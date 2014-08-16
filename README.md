@@ -21,7 +21,7 @@
     * Uncompress 'KafkaGust-Vx.y.tar.gz' twice (e.g : with 7zip)
  * Note : By default a sub-directory 'KafkaGust' containing all the files will be created
 
-## Command for producers
+## Command for to run producers
 ### Command pattern
 ```
 # ./bin/Producers campaignName nbrProducers brokerUris topic msgModel msgSize msgKey nbrGusts nbrMsgsPerGust gustsWindowSize compressionCodec listSize sleep pause nbrMsgsToSkip maxTime syncAsync ackLevel preHash
