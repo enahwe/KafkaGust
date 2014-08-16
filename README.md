@@ -82,9 +82,9 @@
 * ***maxTime*** : The time (in ms) after which the producer will automatically stop
  * `-1` : No effect, the producer will never stop
  * `>=0` : The producer will stop after this value
-* ***syncAsync*** : The Synchronous/Asynchronous mode
+* ***syncAsync*** : The Synchronous/Asynchronous mode.  By setting the producer to `async` we allow batching together of requests (which is great for throughput) but open the possibility of a failure of the client machine dropping unsent data
  * `sync` or `0` : Synchronous send
- * `async` or `1` : Asynchronous send
+ * `async` or `1` : Asynchronous send, the messages are sent asynchronously in a background thread
  * [Note] : This parameter overloads the property `"producer.type"` from the Kafka producer's native configuration
 * ***ackLevel*** : The Kafka acknowledgement level
  * `-1` : All in-sync
