@@ -103,6 +103,7 @@
 * Each file suffixed by `-template.txt` contains the structure of messages to send, enriched with variables
 * Each file suffixed by `-keys.txt` contains a list of keys that it's possible to use as Kafka keys to load-balance the messages to the Kafka partitions (see the ***msgKeyDef*** argument)
 * Each file suffixed by `-content.txt` contains the raw text to add in your messages, in addition to the variables
+
 **You can create your own model by inserting inside the template file the variables you want, as described bellow :**
 
 ### Global variables (same for all messages)
