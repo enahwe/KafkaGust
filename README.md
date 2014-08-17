@@ -138,8 +138,7 @@
 * ${MESSAGE_CONTENT} : The content duplicated and inserted into every message (see the file suffixed by `-content.txt`)
 
 ## Producers examples
-
-Send continuously gusts of 1000 messages 10KB, with an "all in-sync" Kafka acknowledgment
+* Send continuously gusts of 1000 messages 10KB, with an "all in-sync" Kafka acknowledgment
 ```
 # ./bin/Producers MyCampaign 1 127.0.0.1:9092 myTopic TextMsg 10240 -1 -1 1000 -1 none -1 0 0 0 -1 sync -1 none
 ```
