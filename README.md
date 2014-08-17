@@ -113,15 +113,17 @@
 * ${MESSAGE_MODEL} : The ***msgModel*** parameter
 * ${MESSAGE_SIZE} : The ***msgSize*** parameter
 * ${MESSAGE_KEY_DEF} : The ***msgKeyDef*** parameter
-* ${NUMBER_MESSAGES} : The ***nbrMsgs*** parameter
-
-* ${BATCH} : The ***batch*** parameter
+* ${NUMBER_GUSTS} : The ***nbrGusts*** parameter
+* ${NUMBER_MESSAGES_PER_GUST} : The ***nbrMsgsPerGust*** parameter
+* ${GUSTS_WINDOW_SIZE} : The ***gustsWindowSize*** parameter
+* ${COMPRESSION_CODEC} : The ***compressionCodec*** parameter
+* ${LIST_SIZE} : The ***listSize*** parameter
 * ${SLEEP} : The ***sleep*** parameter
 * ${PAUSE} : The ***pause*** parameter
-* ${NUMBER_MESSAGES_SKIPPED} : The ***nbrMsgsSkipped*** parameter
-* ${TIMEOUT} : The ***timeout*** parameter
-* ${PRODUCER_TYPE} : The ***producerType*** parameter
-* ${PRODUCER_ACK} : The ***producerAck*** parameter
+* ${NUMBER_MESSAGES_TO_SKIP} : The ***nbrMsgsToSkip*** parameter
+* ${MAX_TIME} : The ***maxTime*** parameter
+* ${SYNC_ASYNC} : The ***syncAsync*** parameter
+* ${ACK_LEVEL} : The ***ackLevel*** parameter
 * ${PRE_HASH} : The ***preHash*** parameter
 
 ### Message variables (specific for each message)
@@ -132,7 +134,3 @@ Standard variables
 * ${GUST_COUNTER} : The gust's counter
 * ${GUST_CREATION_TIME} : The absolute time (ms) when the gust of messages has been created
 * ${MESSAGE_CONTENT} : The message's content (e.g : n times the letter 'D' according the size of the message we want)
-
-Extended variables
-* ${REFERENCE_ID} : The "reference_id" field from a Product
-* ${PRODUCT_ID} : The "product_id" field from a Product
