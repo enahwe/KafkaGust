@@ -99,14 +99,14 @@
  * `md5` or `2` : Transforms the message key into a MD5 hexadecimal string before to submit it to kafka
 
 ## Message template for producers
-The sub-directory 'template' contains the two example templates "*DefaultMsg*" and "*JsonMsg*".
+The sub-directory './model' contains two examples of templates : "*TextMsg*" and "*JsonMsg*".
 
 Also, you can create your own format templates by inserting inside it the following variables :
 
 ### Common variables (same for all messages)
-* ${NUMBER_THREADS} : The ***nbrThreads*** parameter
-* ${CAMPAIGN_TITLE} : The ***campaignTitle*** parameter
-* ${URI_LIST} : The ***uriList*** parameter
+* ${CAMPAIGN_NAME} : The ***campaignName*** parameter
+* ${NUMBER_PRODUCERS} : The ***nbrProducers*** parameter
+* ${BROKER_URIS} : The ***brokerUris*** parameter
 * ${TOPIC} : The ***topic*** parameter
 * ${MSG_TEMPLATE} : The ***msgTemplate*** parameter
 * ${NUMBER_MESSAGES} : The ***nbrMsgs*** parameter
