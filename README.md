@@ -39,7 +39,7 @@
 ```
 ### Command example
 ```
-# ./bin/Producers MyCampaign 1 127.0.0.1:9092 myTopic DefaultMsg 10240 1:0 -1 1000 -1 none -1 0 0 0 -1 sync -1 none
+# ./bin/Producers MyCampaign 1 127.0.0.1:9092 myTopic ***DefaultMsg*** 10240 1:0 -1 1000 -1 none -1 0 0 0 -1 sync -1 none
 ```
 
 ### Arguments (19)
