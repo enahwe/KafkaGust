@@ -108,9 +108,11 @@ Also, you can create your own format templates by inserting inside it the follow
 * ${NUMBER_PRODUCERS} : The ***nbrProducers*** parameter
 * ${BROKER_URIS} : The ***brokerUris*** parameter
 * ${TOPIC} : The ***topic*** parameter
-* ${MSG_TEMPLATE} : The ***msgTemplate*** parameter
-* ${NUMBER_MESSAGES} : The ***nbrMsgs*** parameter
+* ${MESSAGE_MODEL} : The ***msgModel*** parameter
 * ${MESSAGE_SIZE} : The ***msgSize*** parameter
+* ${MESSAGE_KEY_DEF} : The ***msgKeyDef*** parameter
+* ${NUMBER_MESSAGES} : The ***nbrMsgs*** parameter
+
 * ${BATCH} : The ***batch*** parameter
 * ${SLEEP} : The ***sleep*** parameter
 * ${PAUSE} : The ***pause*** parameter
