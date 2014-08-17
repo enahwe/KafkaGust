@@ -155,5 +155,5 @@
 
 * Send ***150 gusts*** of 1000 messages 10KB, based on template 'TextMsg', with an "all in-sync" Kafka acknowledgment, and the ***statistics window based on the last 20 gusts*** :
 ```
-# ./bin/Producers MyCampaign 1 127.0.0.1:9092 myTopic TextMsg 10240 -1 1 1000 20 none -1 0 0 0 -1 sync -1 none
+# ./bin/Producers MyCampaign 1 127.0.0.1:9092 myTopic TextMsg 10240 -1 150 1000 20 none -1 0 0 0 -1 sync -1 none
 ```
