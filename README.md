@@ -39,7 +39,7 @@
 ```
 ### Command example
 ```
-# ./bin/Producers MyCampaign 1 127.0.0.1:9092 myTopic ***DefaultMsg*** 10240 1:0 -1 1000 -1 none -1 0 0 0 -1 sync -1 none
+# ./bin/Producers MyCampaign 1 127.0.0.1:9092 myTopic DefaultMsg 10240 1:0 -1 1000 -1 none -1 0 0 0 -1 sync -1 none
 ```
 
 ### Arguments (19)
@@ -136,3 +136,5 @@
 * ${MESSAGE_COUNTER_IN_GUST} : The message counter inside the gust
 * ${ABSOLUTE_MESSAGE_COUNTER} : The message (absolute) counter since the producer has started
 * ${MESSAGE_CONTENT} : The content duplicated and inserted into every message (see the file suffixed by `-content.txt`)
+
+## Producers examples
