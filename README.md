@@ -104,28 +104,28 @@
 * Each file suffixed by `-keys.txt` contains a list of keys that it's possible to use as Kafka keys to load-balance the messages to the Kafka partitions (see the ***msgKeyDef*** argument)
 * Each file suffixed by `-content.txt` contains the raw text to add in your messages, in addition to the variables
 
-**You can create your own model by adding inside your template file the variables you want, as described bellow :**
+**You can customize your own model by adding inside your template file the variables you want, as described bellow :**
 
 ### Global variables (same for all messages)
-* ${CAMPAIGN_NAME} : The ***campaignName*** parameter
-* ${NUMBER_PRODUCERS} : The ***nbrProducers*** parameter
-* ${BROKER_URIS} : The ***brokerUris*** parameter
-* ${TOPIC} : The ***topic*** parameter
-* ${MESSAGE_MODEL} : The ***msgModel*** parameter
-* ${MESSAGE_SIZE} : The ***msgSize*** parameter
-* ${MESSAGE_KEY_DEF} : The ***msgKeyDef*** parameter
-* ${NUMBER_GUSTS} : The ***nbrGusts*** parameter
-* ${NUMBER_MESSAGES_PER_GUST} : The ***nbrMsgsPerGust*** parameter
-* ${GUSTS_WINDOW_SIZE} : The ***gustsWindowSize*** parameter
-* ${COMPRESSION_CODEC} : The ***compressionCodec*** parameter
-* ${LIST_SIZE} : The ***listSize*** parameter
-* ${SLEEP} : The ***sleep*** parameter
-* ${PAUSE} : The ***pause*** parameter
-* ${NUMBER_MESSAGES_TO_SKIP} : The ***nbrMsgsToSkip*** parameter
-* ${MAX_TIME} : The ***maxTime*** parameter
-* ${SYNC_ASYNC} : The ***syncAsync*** parameter
-* ${ACK_LEVEL} : The ***ackLevel*** parameter
-* ${PRE_HASH} : The ***preHash*** parameter
+* ${CAMPAIGN_NAME} : The ***campaignName*** argument
+* ${NUMBER_PRODUCERS} : The ***nbrProducers*** argument
+* ${BROKER_URIS} : The ***brokerUris*** argument
+* ${TOPIC} : The ***topic*** argument
+* ${MESSAGE_MODEL} : The ***msgModel*** argument
+* ${MESSAGE_SIZE} : The ***msgSize*** argument
+* ${MESSAGE_KEY_DEF} : The ***msgKeyDef*** argument
+* ${NUMBER_GUSTS} : The ***nbrGusts*** argument
+* ${NUMBER_MESSAGES_PER_GUST} : The ***nbrMsgsPerGust*** argument
+* ${GUSTS_WINDOW_SIZE} : The ***gustsWindowSize*** argument
+* ${COMPRESSION_CODEC} : The ***compressionCodec*** argument
+* ${LIST_SIZE} : The ***listSize*** argument
+* ${SLEEP} : The ***sleep*** argument
+* ${PAUSE} : The ***pause*** argument
+* ${NUMBER_MESSAGES_TO_SKIP} : The ***nbrMsgsToSkip*** argument
+* ${MAX_TIME} : The ***maxTime*** argument
+* ${SYNC_ASYNC} : The ***syncAsync*** argument
+* ${ACK_LEVEL} : The ***ackLevel*** argument
+* ${PRE_HASH} : The ***preHash*** argument
 
 ### Message variables (specific for each message)
 Standard variables
