@@ -144,6 +144,8 @@
 ```
 ![](/Statistics_example.png "Statistics example")
 
+------------------
+_______________
 
 * Send continuously gusts of 1000 ***compressed*** (snappy) messages 10KB, based on template 'TextMsg', with an "all in-sync" Kafka acknowledgment :
 ```
