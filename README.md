@@ -128,10 +128,11 @@
 * ${PRE_HASH} : The ***preHash*** argument
 
 ### Message variables (specific for each message)
-Standard variables
-* ${MESSAGE_KEY} : The message's Kafka key
+* ${MESSAGE_KEY} : The message's Kafka key (depends on the ***msgKeyDef*** argument)
 * ${MESSAGE_CREATION_TIME} : The absolute time (ms) when the message has been created
 * ${MESSAGE_CREATION_RELATIVE_TIME} : The relative time (ms) when the message has been created
 * ${GUST_COUNTER} : The gust's counter
-* ${GUST_CREATION_TIME} : The absolute time (ms) when the gust of messages has been created
-* ${MESSAGE_CONTENT} : The message's content (e.g : n times the letter 'D' according the size of the message we want)
+* ${GUST_START_TIME} : The absolute time (ms) when the gust has been started
+* ${MESSAGE_COUNTER_IN_GUST} : The message counter inside the gust
+* ${ABSOLUTE_MESSAGES_COUNTER} : The message (absolute) counter since the producer has started
+* ${MESSAGE_CONTENT} : The content duplicated and inserted into every message (see the file suffixed by `-content.txt`)
