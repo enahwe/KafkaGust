@@ -99,10 +99,10 @@
  * `md5` or `2` : Transforms the message key into a MD5 hexadecimal string before to submit it to kafka
 
 ## Message template for producers
-The sub-directory `./model` contains two samples of models : "*TextMsg*" and "*JsonMsg*". 
-Each file suffixed by `-template.txt` contains the structure of messages to send. 
-Each file suffixed by `-keys.txt` contains a list of keys that it's possible to use as Kafka messages keys. 
-Also, you can create your own format templates by inserting inside it the following variables :
+* The sub-directory `./model` contains two samples of models : "*TextMsg*" and "*JsonMsg*".
+* Each file suffixed by `-template.txt` contains the structure of messages to send.
+* Each file suffixed by `-keys.txt` contains a list of keys that it's possible to use as Kafka messages keys.
+* Also, you can create your own format templates by inserting inside it the following variables :
 
 ### Common variables (same for all messages)
 * ${CAMPAIGN_NAME} : The ***campaignName*** parameter
