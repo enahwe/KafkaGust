@@ -138,3 +138,9 @@
 * ${MESSAGE_CONTENT} : The content duplicated and inserted into every message (see the file suffixed by `-content.txt`)
 
 ## Producers examples
+
+Usage : campaignName nbrProducers brokerUris topic msgModel msgSize msgKeyDef nbrGusts nbrMsgsPerGust gustsWindowSize compressionCodec listSize sleep pause nbrMsgsToSkip maxTime syncAsync ackLevel preHash
+
+```
+./bin/Producers MyCampaign 1 127.0.0.1:9092 myTopic TextMsg 10240 -1 -1 1000 -1 none -1 0 0 0 -1 sync -1 none
+```
