@@ -134,5 +134,5 @@
 * ${GUST_COUNTER} : The gust's counter
 * ${GUST_START_TIME} : The absolute time (ms) when the gust has been started
 * ${MESSAGE_COUNTER_IN_GUST} : The message counter inside the gust
-* ${ABSOLUTE_MESSAGES_COUNTER} : The message (absolute) counter since the producer has started
+* ${ABSOLUTE_MESSAGE_COUNTER} : The message (absolute) counter since the producer has started
 * ${MESSAGE_CONTENT} : The content duplicated and inserted into every message (see the file suffixed by `-content.txt`)
