@@ -3,8 +3,6 @@
 
 ![](/KafkaGust.png "KafkaGust")
 
-![rrr](/kafkagust-1.0.tar.gz "KafkaGust")
-
 * **KafkaGust** is easy to use, it has been developped for producing high volumes of messages (based on message templates) on any kind of Kafka infrastructure, by creating statistic files
 * By passing a set of arguments (e.g, number of gusts, number of messages in each gust, size of each message, the compression codec, ...) it becomes easier and quicker to launch producers and testing campaigns onto any Kafka environment by calling a single script responsible for sending gusts of messages and the production of statistics continuously
 * KafkaGust can also be useful for comparing the performances results with any kind of Kafka client applications developped in different programming languages (e.g : C#, Python...)
@@ -15,7 +13,7 @@
 * The JAVA_HOME environment variable must be set
 
 ## Installation
-* Download the latest KafkaGust installation file (e.g, `kafkagust-1.0.tar.gz`)
+* Download the latest KafkaGust installation file : ![kafkagust-1.0.tar.gz](/kafkagust-1.0.tar.gz "kafkagust-1.0.tar.gz")
 * Uncompress the file to your prefered folder :
   * From Linux, Mac, Unix :
     * ```$ tar -xvf kafkagust-1.0.tar.gz```
