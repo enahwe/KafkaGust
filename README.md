@@ -3,7 +3,7 @@
 
 ![](/KafkaGust.png "KafkaGust")
 
-(/kafkagust-1.0.tar.gz "KafkaGust")
+![](/kafkagust-1.0.tar.gz "KafkaGust")
 
 * **KafkaGust** is easy to use, it has been developped for producing high volumes of messages (based on message templates) on any kind of Kafka infrastructure, by creating statistic files
 * By passing a set of arguments (e.g, number of gusts, number of messages in each gust, size of each message, the compression codec, ...) it becomes easier and quicker to launch producers and testing campaigns onto any Kafka environment by calling a single script responsible for sending gusts of messages and the production of statistics continuously
