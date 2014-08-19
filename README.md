@@ -13,7 +13,7 @@
 * The JAVA_HOME environment variable must be set
 
 ## Installation
-* Download the latest KafkaGust installation file : ![](/kafkagust-1.0.tar.gz?raw=true "kafkagust-1.0.tar.gz")
+* Download the latest KafkaGust installation file : [kafkagust-1.0.tar.gz !](/kafkagust-1.0.tar.gz?raw=true "kafkagust-1.0.tar.gz")
 * Uncompress the file to your prefered folder :
   * From Linux, Mac, Unix :
     * ```$ tar -xvf kafkagust-1.0.tar.gz```
