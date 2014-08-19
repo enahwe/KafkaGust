@@ -19,7 +19,7 @@
     * ```$ tar -xvf kafkagust-1.0.tar.gz```
   * From Windows :
     * Use your prefered tool to uncompress the installation file (e.g : with 7zip)
-* By default, a sub-directory named 'KafkaGust' and containing all the files will be created
+* By default, a sub-directory named 'kafkagust-1.0' and containing all the files will be created
 
 ## Getting started (start the engine)
 * Go to the directory of KafkaGust installation
