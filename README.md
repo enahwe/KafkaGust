@@ -1,6 +1,3 @@
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif "Donate for KafkaGust")]
-(https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8CHMFNQF6VJL2)
-
 ![](/KafkaGust.png "KafkaGust")
 
 * **KafkaGust** is easy to use, it has been developped for producing high volumes of messages (based on message templates) on any kind of Kafka infrastructure, by creating CSV statistic files
@@ -163,3 +160,6 @@ _______________________________
 ```
 # ./bin/Producers MyCampaign 4 127.0.0.1:9092 myTopic TextMsg 10240 -1 150 1000 20 snappy -1 0 0 0 -1 sync -1 none
 ```
+
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif "Donate for KafkaGust")]
+(https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8CHMFNQF6VJL2)
